@@ -123,7 +123,7 @@
 			var clientHeight = $( window ).height();
   			$('#menuOverlay').css('height', clientHeight);
 
-			$('#menuOverlay').fadeToggle(1000);
+			$('#menuOverlay').slideToggle(1000);
 		});
 
   //   	function AnimateRotate(d){
