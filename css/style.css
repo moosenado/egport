@@ -87,11 +87,6 @@ nav{
 	width: 300px;
 	height: 150px;
 	margin: 20px auto;
-	transform-origin:50% 60%;
-    -ms-transform-origin:50% 60%; /* IE 9 */
-    -webkit-transform-origin:50% 60%; /* Safari and Chrome */
-    -moz-transform-origin:50% 60%; /* Firefox */
-    -o-transform-origin:50% 60%; /* Opera */
 }
 
 #logo img{
