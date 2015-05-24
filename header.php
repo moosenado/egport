@@ -17,7 +17,7 @@
 	<!--Mobile Menu -->
 
 	<div id="menuOverlay">
-		<div class="burger" style="margin-top: 20px">
+			<div class="cross" style="margin-top: 20px"></div>
 		</div>
 	</div>
 
@@ -116,29 +116,23 @@
     	//MOBILE MENU
 
     	$('#menuOverlay').hide()
+    	$('.cross').hide()
 	
 		$('.burger').click(function(){
 
-			//Jquery incase Vh does not work for menu div
+			//Jquery incase Vh (css: viewport height) does not work for menu div
 			var clientHeight = $( window ).height();
   			$('#menuOverlay').css('height', clientHeight);
 
-			$('#menuOverlay').slideToggle(1000);
+			$('#menuOverlay').slideDown(1000);
+			$('.burger').fadeOut(1000);
+
+			$('.cross').fadeIn(1000).click(function(){
+				$('#menuOverlay').slideUp(1000);
+				$('.cross').fadeOut(1000)
+				$('.burger').fadeIn(1000);
+			});
 		});
-
-  //   	function AnimateRotate(d){
-  //   		$({deg: 0}).animate({deg: d}, {
-  //       		step: function(now, fx){
-  //           		$("#logo").css({
-  //                		transform: "rotate(" + now + "deg)";
-  //                		width: 250px;
-  //                		height: 100px;
-  //           		});
-  //       		}
-  //   		});
-		// }
-
-		// AnimateRotate(90);
 	});
 
 </script>

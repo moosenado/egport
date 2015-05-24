@@ -11,10 +11,10 @@ body{
 	background: linear-gradient(182deg, #ffffff, #cecece);
 	background-size: 100% 100%;
 
-	-webkit-animation: AnimationName 17s ease infinite;
-	-moz-animation: AnimationName 17s ease infinite;
-	-o-animation: AnimationName 17s ease infinite;
-	animation: AnimationName 17s ease infinite;
+	-webkit-animation: pageGradient 17s ease infinite;
+	-moz-animation: pageGradient 17s ease infinite;
+	-o-animation: pageGradient 17s ease infinite;
+	animation: pageGradient 17s ease infinite;
 }
 
 html{
@@ -46,11 +46,25 @@ h2{
 #menuOverlay{
 	width: 100%;
 	height:100vh;
-    background:#5c5c5c;
     color:#fff;
-    opacity: .7;
     z-index: 4;
-    border-bottom: 5px solid #333;
+
+    background: linear-gradient(359deg, #ffffff, #cecece);
+	background-size: 100% 100%;
+
+	-webkit-animation: menuGradient 30s ease infinite;
+	-moz-animation: menuGradient 30s ease infinite;
+	-o-animation: menuGradient 30s ease infinite;
+	animation: menuGradient 30s ease infinite;
+}
+
+.burger{
+	display: none;
+	position: relative;
+}
+
+.cross{
+	display: none;
 }
 
 
@@ -66,10 +80,6 @@ nav{
 
 .clear{
 	clear: both;
-}
-
-.burger{
-	display: none;
 }
 
 #logo{
@@ -338,22 +348,43 @@ nav{
 
 /* -------- ANIMATION KEY FRAMES -------- */
 
-@-webkit-keyframes AnimationName {
+@-webkit-keyframes pageGradient {
     0%{background-position:50% 0%}
     50%{background-position:51% 100%}
     100%{background-position:50% 0%}
 }
-@-moz-keyframes AnimationName {
+@-moz-keyframes pageGradient {
     0%{background-position:50% 0%}
     50%{background-position:51% 100%}
     100%{background-position:50% 0%}
 }
-@-o-keyframes AnimationName {
+@-o-keyframes pageGradient {
     0%{background-position:50% 0%}
     50%{background-position:51% 100%}
     100%{background-position:50% 0%}
 }
-@keyframes AnimationName { 
+@keyframes pageGradient { 
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+
+@-webkit-keyframes menuGradient {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+@-moz-keyframes menuGradient {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+@-o-keyframes menuGradient {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+@keyframes menuGradient { 
     0%{background-position:50% 0%}
     50%{background-position:51% 100%}
     100%{background-position:50% 0%}
@@ -677,6 +708,21 @@ footer{
 		cursor: pointer;
 	}
 
+	.cross{
+		display: block;
+		position: absolute;
+		top: 0px;
+		left: 15px;
+		background-image: url(../images/cross1.gif);
+    	background-repeat: no-repeat;
+    	background-position: center;
+    	background-size: 60px 60px;
+    	width: 60px;
+		height: 60px;
+		animation: cross 0.5s infinite steps(3);
+		cursor: pointer;
+	}
+
 	@keyframes burger {
     	0%   { background-image: url('../images/burger1.gif'); } 
     	50%  { background-image: url('../images/burger2.gif'); }
@@ -702,6 +748,36 @@ footer{
 	}
 
 	@-o-keyframes burger {
+	    0%   { background-image: url('../images/burger1.gif'); } 
+	    50%  { background-image: url('../images/burger2.gif'); }
+	    100%  { background-image: url('../images/burger3.gif'); }
+	}
+
+	@keyframes cross {
+    	0%   { background-image: url('../images/cross1.gif'); } 
+    	50%  { background-image: url('../images/cross2.gif'); }
+    	100%  { background-image: url('../images/cross3.gif'); }
+	}
+
+	@-moz-keyframes cross {
+	    0%   { background-image: url('../images/cross1.gif'); } 
+	    50%  { background-image: url('../images/cross2.gif'); }
+	    100%  { background-image: url('../images/cross3.gif'); }
+	}
+
+	@-webkit-keyframes cross {
+	    0%   { background-image: url('../images/cross1.gif'); } 
+	    50%  { background-image: url('../images/cross2.gif'); }
+	    100%  { background-image: url('../images/cross3.gif'); }
+	}
+
+	@-ms-keyframes cross {
+	    0%   { background-image: url('../images/cross1.gif'); } 
+	    50%  { background-image: url('../images/cross2.gif'); }
+	    100%  { background-image: url('../images/cross3.gif'); }
+	}
+
+	@-o-keyframes cross {
 	    0%   { background-image: url('../images/burger1.gif'); } 
 	    50%  { background-image: url('../images/burger2.gif'); }
 	    100%  { background-image: url('../images/burger3.gif'); }
