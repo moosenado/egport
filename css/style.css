@@ -288,7 +288,7 @@ nav{
 	background-color: rgba(123, 178, 174, 0.2);
 }
 
-.backTitle{
+#backTitle{
 	position: absolute;
 	top: -50%;
 	margin-left: auto;
@@ -654,7 +654,7 @@ footer{
 		margin-right: 2%;
 	}
 
-	.backTitle{
+	#backTitle{
 		font-size: 100px;
 	}
 
@@ -792,7 +792,7 @@ footer{
 }
 
 @media only screen and (max-width: 790px){
-	.backTitle{
+	#backTitle{
 		font-size: 80px;
 		top: -30%;
 	}
@@ -815,7 +815,7 @@ footer{
 		border-right: 0px;
 	}
 
-	.backTitle{
+	#backTitle{
 		top: -10%;
 		overflow-x: hidden;
 		overflow-y: hidden;
