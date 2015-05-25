@@ -81,6 +81,10 @@
     		changePage('index');
 		}, false);
 
+		document.getElementById("aboutmePass").addEventListener("click", function() {
+    		changePage('about');
+		}, false);
+
 		// JS for active link
 
     	if(window.location.href.indexOf("index") > -1) {

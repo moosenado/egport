@@ -80,6 +80,28 @@
 
 		<div class="clear"></div>
 
+		<div class="wholeProject" id="proj4">
+
+			<div class="leftCol" id="leftcol_4">
+				<div class="proj">
+					<div class="projLogo">
+						<img src="images/nakedstocklogo.png" title="Naked Stock Logo" alt="Naked Stock Logo" />
+					</div>
+				</div>
+			</div>
+
+			<div class="rightCol" id="rightcol_4">
+				<div class="projRight">
+					<div class="projScreen">
+						<img src="images/nakedstockpage.jpg" title="Naked Stock Page" alt="Naked Stock Page" />
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="clear"></div>
+
 	</main>
 
 	<!-- FOOTER -->
