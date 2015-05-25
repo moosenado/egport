@@ -17,8 +17,13 @@
 	<!--Mobile Menu -->
 
 	<div id="menuOverlay">
-			<div class="cross" style="margin-top: 20px"></div>
-		</div>
+		<div class="cross"></div>
+		<ul class="mobileNav">
+			<li class="mywork"><a href="#">My Work</a></li>
+			<li class="aboutme"><a href="#">About Me</a></li>
+			<li class="blog"><a href="#">Blog</a></li>
+			<li class="contact"><a href="#">Contact</a></li>
+		</ul>
 	</div>
 
 	<header>
@@ -37,12 +42,12 @@
 		<nav>
 
 			<ul class="ulLeft">
-				<li id="mywork"><a href="#">My Work</a></li>
-				<li id="aboutme"><a href="#">About Me</a></li>
+				<li class="mywork"><a href="#">My Work</a></li>
+				<li class="aboutme"><a href="#">About Me</a></li>
 			</ul>
 			<ul class="ulRight">
-				<li id="blog"><a href="#">Blog</a></li>
-				<li id="contact"><a href="#">Contact</a></li>
+				<li class="blog"><a href="#">Blog</a></li>
+				<li class="contact"><a href="#">Contact</a></li>
 			</ul>
 
 		</nav>
@@ -66,51 +71,55 @@
 
 	$(document).ready(function () {
     	if(window.location.href.indexOf("index") > -1) {
-       		var myWork = document.getElementById('mywork');
-       		myWork.style.AnimationName = "giffff";
-       		myWork.style.webkitAnimationName = "giffff";
+       		var myWork = document.getElementsByClassName('mywork');
+       		
+       		for(var i=0; i<myWork.length; i++) {
+    			myWork[i].style.AnimationName = "giffff";
+       		myWork[i].style.webkitAnimationName = "giffff";
 
-       		myWork.style.AnimationDuration = '1s';
-       		myWork.style.webkitAnimationDuration = '1s';
+       		myWork[i].style.AnimationDuration = '1s';
+       		myWork[i].style.webkitAnimationDuration = '1s';
 
-       		myWork.style.animationIterationCount = 'infinite';
-  			myWork.style.webkitAnimationIterationCount = 'infinite';
+       		myWork[i].style.animationIterationCount = 'infinite';
+  			myWork[i].style.webkitAnimationIterationCount = 'infinite';
+			}
+			
     	}
 
     	if(window.location.href.indexOf("aboutme") > -1) {
-       		var myWork = document.getElementById('mywork');
-       		myWork.style.AnimationName = "gif";
-       		myWork.style.webkitAnimationName = "giffff";
+       		var aboutMe = document.getElementsByClassName('aboutme');
+       		aboutMe.style.AnimationName = "gif";
+       		aboutMe.style.webkitAnimationName = "giffff";
 
-       		myWork.style.AnimationDuration = '1s';
-       		myWork.style.webkitAnimationDuration = '1s';
+       		aboutMe.style.AnimationDuration = '1s';
+       		aboutMe.style.webkitAnimationDuration = '1s';
 
-       		myWork.style.animationIterationCount = 'infinite';
-  			myWork.style.webkitAnimationIterationCount = 'infinite';
+       		aboutMe.style.animationIterationCount = 'infinite';
+  			aboutMe.style.webkitAnimationIterationCount = 'infinite';
     	}
 
     	if(window.location.href.indexOf("blog") > -1) {
-       		var myWork = document.getElementById('mywork');
-       		myWork.style.AnimationName = "gifff";
-       		myWork.style.webkitAnimationName = "gifff";
+       		var blog = document.getElemenstByClassName('blog');
+       		blog.style.AnimationName = "gifff";
+       		blog.style.webkitAnimationName = "gifff";
 
-       		myWork.style.AnimationDuration = '1s';
-       		myWork.style.webkitAnimationDuration = '1s';
+       		blog.style.AnimationDuration = '1s';
+       		blog.style.webkitAnimationDuration = '1s';
 
-       		myWork.style.animationIterationCount = 'infinite';
-  			myWork.style.webkitAnimationIterationCount = 'infinite';
+       		blog.style.animationIterationCount = 'infinite';
+  			blog.style.webkitAnimationIterationCount = 'infinite';
     	}
 
     	if(window.location.href.indexOf("contact") > -1) {
-       		var myWork = document.getElementById('mywork');
-       		myWork.style.AnimationName = "giff";
-       		myWork.style.webkitAnimationName = "giff";
+       		var contact = document.getElementsByClassName('contact');
+       		contact.style.AnimationName = "giff";
+       		contact.style.webkitAnimationName = "giff";
 
-       		myWork.style.AnimationDuration = '1s';
-       		myWork.style.webkitAnimationDuration = '1s';
+       		contact.style.AnimationDuration = '1s';
+       		contact.style.webkitAnimationDuration = '1s';
 
-       		myWork.style.animationIterationCount = 'infinite';
-  			myWork.style.webkitAnimationIterationCount = 'infinite';
+       		contact.style.animationIterationCount = 'infinite';
+  			contact.style.webkitAnimationIterationCount = 'infinite';
     	}
 
     	//MOBILE MENU
