@@ -51,10 +51,10 @@
 
 		<div id="logo">
 
-			<img src="images/newlogo2none.png" title="EG Logo" alt="EG Logo" class="top_image"/>
+			<img src="images/newlogo2none.gif" title="EG Logo" alt="EG Logo" class="top_image"/>
 			
 			<!-- Fade below image in on load -->
-			<img src="images/newlogo2.png" title="EG Logo" alt="EG Logo" class="bottom_image" />
+			<img src="images/newlogo2.gif" title="EG Logo" alt="EG Logo" class="bottom_image" />
 
 		</div>
 
@@ -67,8 +67,8 @@
 	$(document).ready(function () {
     	if(window.location.href.indexOf("index") > -1) {
        		var myWork = document.getElementById('mywork');
-       		myWork.style.AnimationName = "gif";
-       		myWork.style.webkitAnimationName = "gif";
+       		myWork.style.AnimationName = "giffff";
+       		myWork.style.webkitAnimationName = "giffff";
 
        		myWork.style.AnimationDuration = '1s';
        		myWork.style.webkitAnimationDuration = '1s';
@@ -79,7 +79,7 @@
 
     	if(window.location.href.indexOf("aboutme") > -1) {
        		var myWork = document.getElementById('mywork');
-       		myWork.style.AnimationName = "giffff";
+       		myWork.style.AnimationName = "gif";
        		myWork.style.webkitAnimationName = "giffff";
 
        		myWork.style.AnimationDuration = '1s';
@@ -124,13 +124,22 @@
 			var clientHeight = $( window ).height();
   			$('#menuOverlay').css('height', clientHeight);
 
-			$('#menuOverlay').slideDown(1000);
+			$('#menuOverlay').fadeIn(1000);
 			$('.burger').fadeOut(1000);
 
+			$('html, body').css({
+    			'overflow': 'hidden',
+    			'height': '100%'
+			});
+
 			$('.cross').fadeIn(1000).click(function(){
-				$('#menuOverlay').slideUp(1000);
+				$('#menuOverlay').fadeOut(1000);
 				$('.cross').fadeOut(1000)
 				$('.burger').fadeIn(1000);
+				$('html, body').css({
+    				'overflow-y': 'auto',
+    				'height': 'auto'
+				});
 			});
 		});
 	});

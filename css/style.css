@@ -10,11 +10,6 @@ body{
 	margin: 0 0 80px;
 	background: linear-gradient(182deg, #ffffff, #cecece);
 	background-size: 100% 100%;
-
-	-webkit-animation: pageGradient 17s ease infinite;
-	-moz-animation: pageGradient 17s ease infinite;
-	-o-animation: pageGradient 17s ease infinite;
-	animation: pageGradient 17s ease infinite;
 }
 
 html{
@@ -44,23 +39,23 @@ h2{
 /* -------- MOBILE MENU -------- */
 
 #menuOverlay{
+	position: fixed;
+	top: 0px;
+	left: 0px;
 	width: 100%;
 	height:100vh;
     color:#fff;
     z-index: 4;
-
+	overflow: hidden;
     background: linear-gradient(359deg, #ffffff, #cecece);
 	background-size: 100% 100%;
-
-	-webkit-animation: menuGradient 30s ease infinite;
-	-moz-animation: menuGradient 30s ease infinite;
-	-o-animation: menuGradient 30s ease infinite;
-	animation: menuGradient 30s ease infinite;
+	opacity: .8;
 }
 
 .burger{
 	display: none;
 	position: relative;
+	z-index: 10;
 }
 
 .cross{
@@ -166,7 +161,7 @@ nav{
 }
 
 .ulLeft li:first-child:hover{
-	animation: gif 0.5s infinite steps(3);
+	animation: giffff 0.5s infinite steps(3);
 	/* animation: giffy 0.5s infinite linear; */
 	opacity: .8;
 }
@@ -192,7 +187,7 @@ nav{
 }
 
 .ulLeft li:nth-child(2):hover{
-	animation: giffff 0.5s infinite steps(3);
+	animation: gif 0.5s infinite steps(3);
 	/* animation: giffy 0.5s infinite linear; */
 	opacity: .8;
 }
@@ -342,27 +337,6 @@ nav{
 }
 
 /* -------- ANIMATION KEY FRAMES -------- */
-
-@-webkit-keyframes pageGradient {
-    0%{background-position:50% 0%}
-    50%{background-position:51% 100%}
-    100%{background-position:50% 0%}
-}
-@-moz-keyframes pageGradient {
-    0%{background-position:50% 0%}
-    50%{background-position:51% 100%}
-    100%{background-position:50% 0%}
-}
-@-o-keyframes pageGradient {
-    0%{background-position:50% 0%}
-    50%{background-position:51% 100%}
-    100%{background-position:50% 0%}
-}
-@keyframes pageGradient { 
-    0%{background-position:50% 0%}
-    50%{background-position:51% 100%}
-    100%{background-position:50% 0%}
-}
 
 @-webkit-keyframes menuGradient {
     0%{background-position:50% 0%}

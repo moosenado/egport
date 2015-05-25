@@ -30,6 +30,8 @@
 
 		</div>
 
+		<div class="clear"></div>
+
 		<div class="wholeProject">
 
 			<div class="leftCol">
@@ -50,6 +52,8 @@
 
 		</div>
 
+		<div class="clear"></div>
+
 		<div class="wholeProject">
 
 			<div class="leftCol">
@@ -69,6 +73,8 @@
 			</div>
 
 		</div>
+
+		<div class="clear"></div>
 
 	</main>
 
