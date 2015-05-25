@@ -10,9 +10,11 @@
 			<h1> My Work </h1>
 		</div> -->
 
-		<div class="wholeProject">
+		<a id="opacTrig1"></a>
 
-			<div class="leftCol">
+		<div class="wholeProject" id="proj1">
+
+			<div class="leftCol" id="leftcol_1">
 				<div class="proj">
 					<div class="projLogo">
 						<img src="images/altanlogo.png" title="Altan Logo" alt="Altan Logo" />
@@ -20,7 +22,7 @@
 				</div>
 			</div>
 
-			<div class="rightCol">
+			<div class="rightCol" id="rightcol_1">
 				<div class="projRight">
 					<div class="projScreen">
 						<img src="images/altanpage.jpg" title="Altan Page" alt="Altan Page" />
@@ -32,9 +34,10 @@
 
 		<div class="clear"></div>
 
-		<div class="wholeProject">
 
-			<div class="leftCol">
+		<div class="wholeProject" id="proj2">
+
+			<div class="leftCol" id="leftcol_2">
 				<div class="proj">
 					<div class="projLogo">
 						<img src="images/torontofacillogo.png" title="Toronto Facilities Logo" alt="Toronto Facilities Logo" />
@@ -42,7 +45,7 @@
 				</div>
 			</div>
 
-			<div class="rightCol">
+			<div class="rightCol" id="rightcol_2">
 				<div class="projRight">
 					<div class="projScreen">
 						<img src="images/torontoparkpage.jpg" title="Toronto Facilities Page" alt="Toronto Facilities Page" />
@@ -54,9 +57,10 @@
 
 		<div class="clear"></div>
 
-		<div class="wholeProject">
 
-			<div class="leftCol">
+		<div class="wholeProject" id="proj3">
+
+			<div class="leftCol" id="leftcol_3">
 				<div class="proj">
 					<div class="projLogo">
 						<img src="images/notredamelogo.png" title="Notre Dame Logo" alt="Notre Dame Logo" />
@@ -64,7 +68,7 @@
 				</div>
 			</div>
 
-			<div class="rightCol">
+			<div class="rightCol" id="rightcol_3">
 				<div class="projRight">
 					<div class="projScreen">
 						<img src="images/notredamepage.jpg" title="Notre Dame Page" alt="Notre Dame Page" />
@@ -103,5 +107,47 @@
 	</footer> -->
 
 </body>
+
+<script>
+
+//Slide in website screens using Jquery UI
+
+$(document).ready(function () {
+
+	var i = 1;
+
+	var go = setInterval(function(){
+    
+		$('#rightcol_'+i).show('slide', { direction: 'left' }, 1000);
+    
+		$('#leftcol_'+i).show('slide', { direction: 'right' }, 1000);
+    
+            i++;
+
+    	}, 400)
+
+	var clientWidth = $( window ).width();
+
+	if (clientWidth <= 820){
+
+		var trig = $("#opacTrig1").offset().top;
+
+		$(document).scroll(function () {
+	    	if ($(window).height() + $(this).scrollTop() > trig) {
+	        	$(".wholeProject").velocity({
+	            	'opacity': '.8'
+	        	}, 1000);
+	    	}else{
+	        	$(".wholeProject").velocity({
+	            	'opacity': '.5'
+	        	}, 1000);
+	    	}
+		});
+
+	}
+
+});
+
+</script>
 
 </html>

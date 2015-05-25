@@ -16,6 +16,7 @@ html{
 	position: relative; /* for sticky footer */
     min-height: 100%;
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 /* -------- COMMON STYLING -------- */
@@ -63,31 +64,8 @@ h2{
 }
 
 .mobileNav{
-	text-align: center;
+	display: none;
 }
-
-.mobileNav li{
-	display: block;
-	padding: 30px 30px 30px 30px;
-	border: 1px solid #828282;
-	cursor: pointer;
-	width: 100px;
-	margin: 10px auto;
-
-	box-shadow: inset 14px 14px 42px -28px #ABABAB,12px 20px 46px -18px #DDDDDD;
-	-webkit-box-shadow: inset 14px 14px 42px -28px #ABABAB,12px 20px 46px -18px #DDDDDD;
-	-moz-box-shadow: inset 14px 14px 42px -28px #ABABAB,12px 20px 46px -18px #DDDDDD;
-	-o-box-shadow: inset 14px 14px 42px -28px #ABABAB,12px 20px 46px -18px #DDDDDD;
-}
-
-.mobileNav li a{
-	text-decoration: none;
-	text-shadow: 9px 9px 6px rgba(150, 150, 150, 0.50);
-	color: #333;
-	font-family: 'Righteous', cursive;
-	font-size: 20px;
-}
-
 
 /* -------- HEADER -------- */
 
@@ -219,7 +197,7 @@ nav{
 }
 
 .ulLeft li:nth-child(2):active{
-	background-color: rgba(254, 208, 165, .2);
+	background-color: rgba(123, 178, 174, 0.2);
 }
 
 .ulRight{
@@ -281,7 +259,7 @@ nav{
 }
 
 .ulRight li:first-child:active{
-	background-color: rgba(254, 208, 165, 0.2);
+	background-color: rgba(123, 178, 174, 0.2);
 }
 
 .ulRight li:nth-child(2){
@@ -565,6 +543,7 @@ main{
 	-o-transition: opacity 1s ease-in-out;
 	-ms-transition: opacity 1s ease-in-out;
 	transition: opacity 1s ease-in-out;
+	height: 250px;
 }
 
 .wholeProject:hover{
@@ -576,6 +555,7 @@ main{
 	float:left;
 	width: 50%;
 	max-width: 100%;
+	display: none;
 }
 
 .rightCol{
@@ -583,6 +563,7 @@ main{
 	float:right;
 	width: 50%;
 	max-width: 100%;
+	display: none;
 }
 
 .proj{
@@ -688,6 +669,10 @@ footer{
 		display: none;
 	}
 
+	.wholeProject{
+		height: auto;
+	}
+
 	.burger{
 		display: block;
 		position: absolute;
@@ -716,6 +701,32 @@ footer{
 		height: 60px;
 		animation: cross 0.5s infinite steps(3);
 		cursor: pointer;
+	}
+
+	.mobileNav{
+		display: block;
+	}
+
+	.mobileNav li{
+		display: block;
+		padding: 30px 30px 30px 30px;
+		border: 1px solid #828282;
+		cursor: pointer;
+		width: 100px;
+		margin: 10px auto;
+
+		box-shadow: inset 14px 14px 42px -28px #ABABAB,12px 20px 46px -18px #DDDDDD;
+		-webkit-box-shadow: inset 14px 14px 42px -28px #ABABAB,12px 20px 46px -18px #DDDDDD;
+		-moz-box-shadow: inset 14px 14px 42px -28px #ABABAB,12px 20px 46px -18px #DDDDDD;
+		-o-box-shadow: inset 14px 14px 42px -28px #ABABAB,12px 20px 46px -18px #DDDDDD;
+	}
+
+	.mobileNav li a{
+		text-decoration: none;
+		text-shadow: 9px 9px 6px rgba(150, 150, 150, 0.50);
+		color: #333;
+		font-family: 'Righteous', cursive;
+		font-size: 20px;
 	}
 
 	@keyframes burger {
@@ -791,11 +802,13 @@ footer{
 	.leftCol{
 		float: none;
 		width: 100%;
+		margin-top: 0px;
 	}
 
 	.rightCol{
 		float: none;
 		width: 100%;
+		margin-top: 0px;
 	}
 
 	.proj{
