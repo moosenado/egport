@@ -48,9 +48,15 @@ $(document).ready(function () {
 		changePage('contact');
 	}, false);
 
+	//PORTFOLIO LISTENERS
+
+	document.getElementById("proj1").addEventListener("click", function() {
+		changePage('altan');
+	}, false);
+
 	//SET ACTIVE PAGE CSS
 
-	if(window.location.href.indexOf("index") > -1) {
+	if(window.location.href.indexOf("index") > -1 || window.location.href.indexOf("altan") > -1) {
 		var myWork = document.getElementsByClassName('mywork');
 
 		for(var i=0; i<myWork.length; i++) {
@@ -188,6 +194,17 @@ $(document).ready(function () {
 		}
 
 		if(currentPage === "contact.php"){
+
+			$('html').velocity('fadeOut', 1000, function() { 
+
+				var currentURL = window.location.pathname;
+				var shortURL = currentURL.substring(0, currentURL.lastIndexOf('/'));			
+				location.href = shortURL + '/' + goToPage + '.php';
+
+			});
+		}
+
+		if(currentPage === "altan.php"){
 
 			$('html').velocity('fadeOut', 1000, function() { 
 

@@ -8,7 +8,7 @@
 
 		<a id="opacTrig1"></a>
 
-		<div class="wholeProject" id="proj1">
+		<div class="wholeProject" id="proj1" onclick="changePage">
 
 			<div class="leftCol" id="leftcol_1">
 				<div class="proj">
@@ -166,6 +166,24 @@ $(document).ready(function () {
 	    	}
 		});
 	}
+
+	//TOGGLE PROJECT SLIDE ON CLICK
+
+	$('#proj1').click(function() {
+  		$('#proj1').toggle("slide", 3000);
+	});
+
+	$('#proj2').click(function() {
+  		$('#proj2').toggle("slide", 3000);
+	});
+
+	$('#proj3').click(function() {
+  		$('#proj3').toggle("slide", 3000);
+	});
+
+	$('#proj4').click(function() {
+  		$('#proj4').toggle("slide", 3000);
+	});
 });
 
 </script>
