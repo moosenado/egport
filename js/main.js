@@ -40,6 +40,14 @@ $(document).ready(function () {
 		changePage('about');
 	}, false);
 
+	document.getElementById("contactPass").addEventListener("click", function() {
+		changePage('contact');
+	}, false);
+
+	document.getElementById("contactPassM").addEventListener("click", function() {
+		changePage('contact');
+	}, false);
+
 	//SET ACTIVE PAGE CSS
 
 	if(window.location.href.indexOf("index") > -1) {
@@ -169,6 +177,17 @@ $(document).ready(function () {
 		}
 
 		if(currentPage === "about.php"){
+
+			$('html').velocity('fadeOut', 1000, function() { 
+
+				var currentURL = window.location.pathname;
+				var shortURL = currentURL.substring(0, currentURL.lastIndexOf('/'));			
+				location.href = shortURL + '/' + goToPage + '.php';
+
+			});
+		}
+
+		if(currentPage === "contact.php"){
 
 			$('html').velocity('fadeOut', 1000, function() { 
 

@@ -4,10 +4,6 @@
 
 	<main role="main">
 
-		<!-- <div class="innerTitle">
-			<h1> My Work </h1>
-		</div> -->
-
 		<!-- PROJECT 1 -->
 
 		<a id="opacTrig1"></a>
