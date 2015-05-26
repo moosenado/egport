@@ -1,7 +1,5 @@
 <?php include('header.php'); ?>
 
-	<div class="clear"></div>
-
 	<!-- MAIN CONTENT -->
 
 	<main role="main">
@@ -9,6 +7,8 @@
 		<!-- <div class="innerTitle">
 			<h1> My Work </h1>
 		</div> -->
+
+		<!-- PROJECT 1 -->
 
 		<a id="opacTrig1"></a>
 
@@ -34,6 +34,7 @@
 
 		<div class="clear"></div>
 
+		<!-- PROJECT 2 -->
 
 		<div class="wholeProject" id="proj2">
 
@@ -57,6 +58,7 @@
 
 		<div class="clear"></div>
 
+		<!-- PROJECT 3 -->
 
 		<div class="wholeProject" id="proj3">
 
@@ -79,6 +81,8 @@
 		</div>
 
 		<div class="clear"></div>
+
+		<!-- PROJECT 4 -->
 
 		<div class="wholeProject" id="proj4">
 
@@ -132,7 +136,7 @@
 
 <script>
 
-//Slide in website screens using Jquery UI
+//SLIDE IN WEBSITE SCREENS (UI)
 
 $(document).ready(function () {
 
@@ -165,9 +169,7 @@ $(document).ready(function () {
 	        	}, 1000);
 	    	}
 		});
-
 	}
-
 });
 
 </script>

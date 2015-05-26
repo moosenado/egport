@@ -31,8 +31,9 @@
 
 	<header>
 
-		<div id="backTitle">
-		
+		<!-- PAGE TITLE -->
+
+		<div id="backTitle">	
 		</div>
 
 		<!-- NAVIGATION -->
@@ -43,7 +44,6 @@
 		</div>
 
 		<nav>
-
 			<ul class="ulLeft">
 				<li class="mywork" onclick="changePage" id="myworkPass"><a>My Work</a></li>
 				<li class="aboutme" onclick="changePage" id="aboutmePass"><a>About Me</a></li>
@@ -52,7 +52,6 @@
 				<li class="blog" onclick="changePage" id="blogPass"><a>Blog</a></li>
 				<li class="contact" onclick="changePage" id="contactPass"><a>Contact</a></li>
 			</ul>
-
 		</nav>
 
 		<!-- LOGO -->
@@ -67,3 +66,5 @@
 		</div>
 
 	</header>
+
+	<div class="clear"></div>

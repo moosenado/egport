@@ -1,7 +1,5 @@
 <?php include('header.php'); ?>
 
-	<div class="clear"></div>
-
 	<main role="main">
 
 		<div id="mePic">
