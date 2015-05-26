@@ -642,6 +642,19 @@ footer{
 	color: #6b6b6b;
 }
 
+/* -------- ABOUT CONTENT -------- */
+
+#mePic{
+	width: 200px;
+	width: 200px;
+	margin: 0 auto;
+}
+
+#mePic img{
+	width: 100%;
+	height: auto;
+}
+
 /* -------- MEDIA QUERIES -------- */
 
 @media only screen and (max-width: 1000px){
