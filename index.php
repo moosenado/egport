@@ -8,7 +8,7 @@
 
 		<a id="opacTrig1"></a>
 
-		<div class="wholeProject" id="proj1" onclick="changePage">
+		<div class="wholeProject" id="proj1" onclick="portPage">
 
 			<div class="leftCol" id="leftcol_1">
 				<div class="proj">
@@ -184,6 +184,23 @@ $(document).ready(function () {
 	$('#proj4').click(function() {
   		$('#proj4').toggle("slide", 3000);
 	});
+
+	//PORTFOLIO LISTENERS
+
+	document.getElementById("proj1").addEventListener("click", function() {
+		portPage('altan');
+	}, false);
+
+	function portPage(goToPage){
+
+			$('html').velocity('fadeOut', 1000, function() { 
+
+				var currentURL = window.location.pathname;
+				var shortURL = currentURL.substring(0, currentURL.lastIndexOf('/'));			
+				location.href = shortURL + '/' + goToPage + '.php';
+
+			});
+	}
 });
 
 </script>

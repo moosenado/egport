@@ -5,7 +5,7 @@ $(document).ready(function () {
 	var path = window.location.pathname;
 	var currentPage = path.split("/").pop();
 
-	if(currentPage === "index.php"){
+	if(currentPage === "index.php" || currentPage === "altan.php"){
 		document.getElementById('backTitle').innerHTML = '<h1>My Work</h1>';
 	}
 	if(currentPage === "about.php"){
@@ -46,12 +46,6 @@ $(document).ready(function () {
 
 	document.getElementById("contactPassM").addEventListener("click", function() {
 		changePage('contact');
-	}, false);
-
-	//PORTFOLIO LISTENERS
-
-	document.getElementById("proj1").addEventListener("click", function() {
-		changePage('altan');
 	}, false);
 
 	//SET ACTIVE PAGE CSS
