@@ -59,10 +59,10 @@
 
 		<div id="logo">
 
-			<img src="images/newlogo2none.gif" title="EG Logo" alt="EG Logo" class="top_image"/>
+			<img src="images/newlogo2nonesmall.png" title="EG Logo" alt="EG Logo" class="top_image"/>
 			
 			<!-- Fade below image in on load -->
-			<img src="images/newlogo2.gif" title="EG Logo" alt="EG Logo" class="bottom_image" />
+			<img src="images/newlogo2.png" title="EG Logo" alt="EG Logo" class="bottom_image" />
 
 		</div>
 
