@@ -36,6 +36,7 @@
 						<li>PHP</li>
 						<li>JSON</li>
 						<li>XML</li>
+						<li>XPATH</li>
 						<li>HTML</li>
 						<li>CSS</li>
 					</ul>
@@ -55,7 +56,7 @@
 			</div>
 
 			<div class="portImage" style="margin-top: 20px">
-				<img src="images/torontoparkpage2.jpg" title="Toronto Facilities Page" alt="Toronto Facilities Page" />
+				<img src="images/torontoparkpage2.jpg" title="Toronto Facilities Page 2" alt="Toronto Facilities Page 2" />
 			</div>
 
 			<h2 class="titlePadding">Mobile Design</h2>

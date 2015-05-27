@@ -55,6 +55,10 @@
 				<img src="images/nakedstockpage.jpg" title="Naked Stock Page" alt="Naked Stock Page" />
 			</div>
 
+			<div class="portImage" style="margin-top: 20px">
+				<img src="images/nakedstockpage2.jpg" title="Naked Stock Page 2" alt="Naked Stock Page 2" />
+			</div>
+
 			<div id="pageNav">
 				<ul>
 					<li><a href="notredame.php"><img src="images/backwardarrow.png" title="Back" alt="Back Arrow" /></a></li>

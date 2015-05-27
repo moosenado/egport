@@ -23,7 +23,7 @@
 				</p>
 
 				<p class="justify">
-					Completely redesign and develop the website for Notre Dame Hospial in Hearst, Ontario. I took on the role of team leader and worked with four other classmates. The site is cross device compatible and also features an indepth content management system (CMS). All website content including the main navigation can be edited from the CMS. 
+					Completely redesign and develop the website for Notre Dame Hospial in Hearst, Ontario. I took on the role of team leader and worked with four talented classmates. The site is cross device compatible and also features an indepth content management system (CMS). All website content including the main navigation can be edited from the CMS. 
 				</p>
 
 				<p class="justify">
