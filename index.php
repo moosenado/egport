@@ -191,6 +191,18 @@ $(document).ready(function () {
 		portPage('altan');
 	}, false);
 
+	document.getElementById("proj2").addEventListener("click", function() {
+		portPage('torontofacilities');
+	}, false);
+
+	document.getElementById("proj3").addEventListener("click", function() {
+		portPage('notredame');
+	}, false);
+
+	document.getElementById("proj4").addEventListener("click", function() {
+		portPage('nakedstock');
+	}, false);
+
 	function portPage(goToPage){
 
 			$('html').velocity('fadeOut', 1000, function() { 

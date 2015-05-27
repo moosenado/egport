@@ -5,7 +5,9 @@ $(document).ready(function () {
 	var path = window.location.pathname;
 	var currentPage = path.split("/").pop();
 
-	if(currentPage === "index.php" || currentPage === "altan.php"){
+	if(currentPage === "index.php" || currentPage === "altan.php" || 
+		currentPage === "notredame.php" || currentPage === "torontofacilities.php" ||
+		currentPage === "nakedstock.php"){
 		document.getElementById('backTitle').innerHTML = '<h1>My Work</h1>';
 	}
 	if(currentPage === "about.php"){
@@ -50,7 +52,9 @@ $(document).ready(function () {
 
 	//SET ACTIVE PAGE CSS
 
-	if(window.location.href.indexOf("index") > -1 || window.location.href.indexOf("altan") > -1) {
+	if(window.location.href.indexOf("index") > -1 || window.location.href.indexOf("altan") > -1 || 
+		window.location.href.indexOf("torontofacilities") > -1 || window.location.href.indexOf("notredame") > -1 ||
+		window.location.href.indexOf("nakedstock") > -1) {
 		var myWork = document.getElementsByClassName('mywork');
 
 		for(var i=0; i<myWork.length; i++) {
@@ -199,6 +203,39 @@ $(document).ready(function () {
 		}
 
 		if(currentPage === "altan.php"){
+
+			$('html').velocity('fadeOut', 1000, function() { 
+
+				var currentURL = window.location.pathname;
+				var shortURL = currentURL.substring(0, currentURL.lastIndexOf('/'));			
+				location.href = shortURL + '/' + goToPage + '.php';
+
+			});
+		}
+
+		if(currentPage === "torontofacilities.php"){
+
+			$('html').velocity('fadeOut', 1000, function() { 
+
+				var currentURL = window.location.pathname;
+				var shortURL = currentURL.substring(0, currentURL.lastIndexOf('/'));			
+				location.href = shortURL + '/' + goToPage + '.php';
+
+			});
+		}
+
+		if(currentPage === "notredame.php"){
+
+			$('html').velocity('fadeOut', 1000, function() { 
+
+				var currentURL = window.location.pathname;
+				var shortURL = currentURL.substring(0, currentURL.lastIndexOf('/'));			
+				location.href = shortURL + '/' + goToPage + '.php';
+
+			});
+		}
+
+		if(currentPage === "nakedstock.php"){
 
 			$('html').velocity('fadeOut', 1000, function() { 
 
