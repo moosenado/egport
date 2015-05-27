@@ -106,23 +106,11 @@
 
 	<!-- FOOTER -->
 
-	<!-- <footer>
+<!-- 	<footer>
 
 		<div id="page_info">
 
-			<p>&copy; Elliot Grabish</p>
-			<p>Junior Interactive Developer Exercise - Option 2</p>
-
-		</div>
-
-		<div id="footer_links">
-
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
+			<p>&copy; Elliot Grabish 2015</p>
 
 		</div>
 
