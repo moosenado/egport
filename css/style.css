@@ -22,7 +22,7 @@ html{
 /* -------- COMMON STYLING -------- */
 
 a, p{
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-family: 'Droid Sans', sans-serif;
 }
 
 p{
@@ -32,9 +32,34 @@ p{
 
 
 h2{
-	font-size: 3px;
+	font-size: 25px;
 	color: #737373;
-	padding: 5px 5px 5px;
+	font-family: 'Anton', sans-serif;
+	text-shadow: 9px 9px 6px rgba(150, 150, 150, 0.1);
+	opacity: .8;
+}
+
+.center{
+	margin: 0 auto;
+	text-align: center;
+}
+
+.border{
+	border: 3px solid #828282;
+	padding: 5px;
+	box-shadow: inset 14px 14px 42px -28px #ABABAB,12px 20px 46px -18px #DDDDDD;
+	-webkit-box-shadow: inset 14px 14px 42px -28px #ABABAB,12px 20px 46px -18px #DDDDDD;
+	-moz-box-shadow: inset 14px 14px 42px -28px #ABABAB,12px 20px 46px -18px #DDDDDD;
+	-o-box-shadow: inset 14px 14px 42px -28px #ABABAB,12px 20px 46px -18px #DDDDDD;
+}
+
+.titlePadding{
+	padding: 30px 20px 20px 20px;
+}
+
+.justify{
+	text-align: justify;
+	line-height: 1.2;
 }
 
 /* -------- MOBILE MENU -------- */
@@ -130,7 +155,7 @@ nav{
 
 .ulLeft li{
 	display: inline;
-	padding: 10px 30px 10px 30px;
+	padding: 14px 30px 10px 30px;
 	border: 1px solid #828282;
 	cursor: pointer;
 
@@ -145,7 +170,8 @@ nav{
 	text-decoration: none;
 	text-shadow: 9px 9px 6px rgba(150, 150, 150, 0.50);
 	color: #333;
-	font-family: 'Righteous', cursive;
+	font-family: 'Anton', sans-serif;
+	font-size: 18px;
 }
 
 .ulLeft li:first-child{
@@ -166,6 +192,8 @@ nav{
 
 .ulLeft li:first-child:hover{
 	animation: giffff 0.5s infinite steps(3);
+	-webkit-animation: giffff 0.5s infinite steps(3);
+	-moz-animation: giffff 0.5s infinite steps(3);
 	/* animation: giffy 0.5s infinite linear; */
 	opacity: .8;
 }
@@ -192,6 +220,8 @@ nav{
 
 .ulLeft li:nth-child(2):hover{
 	animation: gif 0.5s infinite steps(3);
+	-webkit-animation: gif 0.5s infinite steps(3);
+	-moz-animation: gif 0.5s infinite steps(3);
 	/* animation: giffy 0.5s infinite linear; */
 	opacity: .8;
 }
@@ -219,7 +249,7 @@ nav{
 
 .ulRight li{
 	display: inline;
-	padding: 10px 30px 10px 30px;
+	padding: 14px 30px 10px 30px;
 	border: 1px solid #828282;
 	cursor: pointer;
 
@@ -233,7 +263,8 @@ nav{
 	text-decoration: none;
 	text-shadow: 9px 9px 6px rgba(150, 150, 150, 0.50);
 	color: #333;
-	font-family: 'Righteous', cursive;
+	font-family: 'Anton', sans-serif;
+	font-size: 18px;
 }
 
 .ulRight li:first-child{
@@ -254,6 +285,8 @@ nav{
 
 .ulRight li:first-child:hover{
 	animation: gifff 0.5s infinite steps(3);
+	-webkit-animation: gifff 0.5s infinite steps(3);
+	-moz-animation: gifff 0.5s infinite steps(3);
 	/* animation: giffy 0.5s infinite linear; */
 	opacity: .8;
 }
@@ -280,6 +313,8 @@ nav{
 
 .ulRight li:nth-child(2):hover{
 	animation: giff 0.5s infinite steps(3);
+	-webkit-animation: giff 0.5s infinite steps(3);
+	-moz-animation: giff 0.5s infinite steps(3);
 	/* animation: giffy 0.5s infinite linear; */
 	opacity: .8;
 }
@@ -320,24 +355,13 @@ nav{
 }
 
 .innerTitle{
-	font-family: 'Lobster', cursive;
-	font-size: 30px;
+	font-family: 'Anton', sans-serif;
+	font-size: 20px;
 	color: rgba(107, 107, 107, 1);
-	text-shadow: 9px 9px 6px rgba(150, 150, 150, 0.21);
-	text-align: center;
-	width: 350px;
-
-	-webkit-animation:fade ease-in 1;  
- 	-moz-animation:fade ease-in 1;
- 	animation:fade ease-in 1;
-
- 	-webkit-animation-duration: 2s;
- 	-moz-animation-duration: 2s;
- 	animation-duration: 2s;
- 
- 	-webkit-animation-fill-mode:forwards;
- 	-moz-animation-fill-mode:forwards;
- 	animation-fill-mode:forwards;
+	text-shadow: 9px 9px 6px rgba(150, 150, 150, 0.1);
+	text-align: justify;
+	margin: 0 auto;
+	max-width: 100%;
 }
 
 /* -------- ANIMATION KEY FRAMES -------- */
@@ -544,6 +568,7 @@ main{
 	-ms-transition: opacity 1s ease-in-out;
 	transition: opacity 1s ease-in-out;
 	height: 250px;
+	cursor: pointer;
 }
 
 .wholeProject:hover{
@@ -609,8 +634,6 @@ footer{
     bottom: 0;
 	height: 80px;
 	width: 100%;
-	background-color: #d5d5d5;
-	border-top: 1px solid #a6a6a6;
 }
 
 #page_info{
@@ -644,15 +667,146 @@ footer{
 
 /* -------- ABOUT CONTENT -------- */
 
+#aboutMain{
+	width: 75%;
+	margin: 0 auto;
+}
+
+.aboutmeContent{
+	float:right;
+	text-align: justify;
+	width: 70%;
+	max-width: 100%;
+	line-height: 1.2;
+	font-size: 17px;
+}
+
+.aboutmeContent p{
+	font-size: 15px;
+}
+
 #mePic{
 	width: 200px;
-	width: 200px;
+	height: 200px;
 	margin: 0 auto;
+	display: none;
+	float: left;
 }
 
 #mePic img{
 	width: 100%;
 	height: auto;
+}
+
+/* -------- PORTFOLIO CONTENT -------- */
+
+#portMain{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.portImage{
+	width: 800px;
+	height: auto;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.portImage img{
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+}
+
+.portImageMobile{
+	width: 350px;
+	height: auto;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.portImageMobile img{
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+}
+
+.portImage{
+	width: 800px;
+}
+
+.portImage img{
+	width: 100%;
+}
+
+.visitSite{
+	border: 1px solid #828282;
+	cursor: pointer;
+	width: 400px;
+	margin: 60px auto 40px auto;
+
+	box-shadow: inset 14px 14px 42px -28px #ABABAB,12px 20px 46px -18px #DDDDDD;
+	-webkit-box-shadow: inset 14px 14px 42px -28px #ABABAB,12px 20px 46px -18px #DDDDDD;
+	-moz-box-shadow: inset 14px 14px 42px -28px #ABABAB,12px 20px 46px -18px #DDDDDD;
+	-o-box-shadow: inset 14px 14px 42px -28px #ABABAB,12px 20px 46px -18px #DDDDDD;
+	opacity: .4;
+	-webkit-transition: opacity .8s ease-in-out;
+	-moz-transition: opacity .8s ease-in-out;
+	-o-transition: opacity .8s ease-in-out;
+	-ms-transition: opacity .8s ease-in-out;
+	transition: opacity .8s ease-in-out;
+	max-width: 100%;
+}
+
+.visitSite:hover{
+	opacity: 1;
+}
+
+.visitSite a{
+	display: inline-block;
+	font-family: 'Anton', sans-serif;
+	text-decoration: none;
+	font-size: 30px;
+	text-shadow: 9px 9px 6px rgba(150, 150, 150, 0.50);
+	color: #333;
+	padding: 10px 30px 10px 30px;
+}
+
+.portInfo{
+	width: 70%;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+#techList li{
+	display: inline;
+	font-size: 20px;
+	color: #4d4d4d;
+	border-right: 1px solid #cecece;
+	padding: 0px 10px 0px 10px;
+	font-family: 'Droid Sans', sans-serif;
+}
+
+
+#techList li:last-child{
+	border-right: 0px;
+}
+
+#pageNav{
+	margin: 40px auto;
+	text-align: center;
+}
+
+#pageNav ul li{
+	display: inline;
+	font-family: 'Droid Sans', sans-serif;
+	text-decoration: none;
+	color: #4d4d4d;
+}
+
+#pageNav ul li img{
+	width: 50px;
 }
 
 /* -------- MEDIA QUERIES -------- */
@@ -669,6 +823,15 @@ footer{
 
 	#backTitle{
 		font-size: 100px;
+	}
+
+	.aboutmeContent{
+		float: none;
+		margin: 0 auto;
+	}
+
+	#mePic{
+		float: none;
 	}
 
 }
@@ -738,7 +901,7 @@ footer{
 		text-decoration: none;
 		text-shadow: 9px 9px 6px rgba(150, 150, 150, 0.50);
 		color: #333;
-		font-family: 'Righteous', cursive;
+		font-family: 'Anton', sans-serif;
 		font-size: 20px;
 	}
 
@@ -833,5 +996,21 @@ footer{
 		overflow-x: hidden;
 		overflow-y: hidden;
 		white-space: nowrap
+	}
+
+	.innerTitle{
+		font-size: 15px;
+	}
+
+	#aboutMain{
+		width: 90%;
+	}
+
+	.aboutmeContent{
+		width: 90%;
+	}
+
+	.portInfo{
+		width: 90%;
 	}
 }
