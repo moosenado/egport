@@ -4,6 +4,8 @@ $(document).ready(function () {
 
 	var onPage;
 
+	$('body').velocity("fadeIn", { duration: 1000 });
+
 	//SHOW BODY
 
 	$('body').show(); //for smooth transition on page load
@@ -147,7 +149,9 @@ $(document).ready(function () {
 	$('.burger').click(function(){
 
 		//get view port height
-		var clientHeight = $(window).height();
+
+		var clientHeight = $( window ).height();
+
 		$('#menuOverlay').css('height', clientHeight);
 
 		//fade out burger
