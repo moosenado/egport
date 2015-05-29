@@ -65,7 +65,7 @@ if(isset($_POST['submit'])){
 	<main role="main">
 
 		<div class="innerTitle">
-			<h1 class="center titlePadding">Contact Me</h1>
+			<h1 class="center titlePadding"><i class="fa fa-envelope fapadding"></i> Contact Me</h1>
 		</div>
 
 		<div id="formStyle">
