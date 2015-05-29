@@ -127,9 +127,9 @@ nav{
 	-moz-animation:fade ease-in 1;
 	animation:fade ease-in 1;
 
-	-webkit-animation-duration: 3.2s;
-	-moz-animation-duration: 3.2s;
-	animation-duration: 3.2s;
+	-webkit-animation-duration: 2.2s;
+	-moz-animation-duration: 2.2s;
+	animation-duration: 2.2s;
 
 	-webkit-animation-fill-mode:forwards;
 	-moz-animation-fill-mode:forwards;
