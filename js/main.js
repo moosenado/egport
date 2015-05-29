@@ -4,8 +4,6 @@ $(document).ready(function () {
 
 	var onPage;
 
-	$('body').velocity("fadeIn", { duration: 1000 });
-
 	//SHOW BODY
 
 	$('body').show(); //for smooth transition on page load
