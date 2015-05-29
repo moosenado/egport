@@ -22,7 +22,7 @@ $(document).ready(function () {
 
 	//FADE IN BACKGROUND ON LOAD
 
-	$('body').velocity("fadeIn", { duration: 1000 })
+	$('body').velocity("fadeIn", { duration: 1000 });
 
 	//GRAB ONCLICK EVENT FOR PAGE EXIT ANIMATION
 
@@ -133,7 +133,7 @@ $(document).ready(function () {
 	//burger is clicked
 	$('.burger').click(function(){
 
-		//Jquery incase Vh (css: viewport height) does not work for menu div
+		//get view port height
 		var clientHeight = $( window ).height();
 		$('#menuOverlay').css('height', clientHeight);
 
@@ -143,8 +143,7 @@ $(document).ready(function () {
 		//fade in menu components
 		$('#menuOverlay').velocity("fadeIn", { duration: 1000 });
 		$('.mobileNav').velocity("fadeIn", { duration: 1000 });
-		$('.cross').velocity("fadeIn", { duration: 1000 });
-
+		
 		//hide ability to scroll
 		$('html, body').css({
 			'overflow': 'hidden',
@@ -155,7 +154,7 @@ $(document).ready(function () {
 		$('.cross').velocity("fadeIn", { duration: 1000 }).click(function(){
 
 			$('#menuOverlay').velocity("fadeOut", { duration: 1000 });
-			$('.cross').velocity("fadeOut", { duration: 1000 });
+			
 			$('.burger').velocity("fadeIn", { duration: 1000 });
 			$('html, body').css({
 				'overflow-y': 'auto',
