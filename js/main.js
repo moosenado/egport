@@ -1,128 +1,141 @@
 $(document).ready(function () {
 
+	//SET PAGE OBJECT
+
+	var onPage;
+
+	//SHOW BODY
+
+	$('body').show(); //for smooth transition on page load
+
+	//FADE IN BODY ON LOAD
+
+	$('body').velocity("fadeIn", { duration: 1000 });
+
 	//SET PAGE TITLE
 
 	var path = window.location.pathname;
 	var currentPage = path.split("/").pop();
 
-	if(currentPage === "index.php" || currentPage === "" || currentPage === "altan.php" || 
-		currentPage === "notredame.php" || currentPage === "torontofacilities.php" ||
-		currentPage === "nakedstock.php"){
-		document.getElementById('backTitle').innerHTML = '<h1>My Work</h1>';
+	//SET PAGE CLASS
+
+	var Class = function(methods) {
+		var klass = function() {
+			this.initialize.apply(this, arguments);
+		};
+
+		for (var property in methods) {
+			klass.prototype[property] = methods[property];
+		}
+
+		if (!klass.prototype.initialize) klass.prototype.initialize = function(){};
+
+		return klass;
+	};
+
+	var Page = Class({
+		initialize: function(pageTitle, animationClass, animationFrames, eventListenClass, eventListenClassM, toPage) {
+			this.pageTitle = pageTitle;
+			this.currentPage = currentPage;
+			this.animationClass  = animationClass;
+			this.animationFrames  = animationFrames;
+			this.eventListenClass  = eventListenClass;
+			this.eventListenClassM  = eventListenClassM;
+			this.toPage  = toPage;
+		}
+	});
+
+	//SWITCH FOR CURRENT PAGE
+
+	switch (currentPage) {
+		case "index.php":
+		case "":
+		case "altan.php":
+		case "notredame.php":
+		case "torontofacilities.php":
+		case "nakedstock.php":
+			onPage = new Page('My Work', 'mywork', 'giffff', 'myworkPass', 'myworkPassM', 'index');
+			break;
+		case "about.php":
+			onPage = new Page('About Me', 'aboutme', 'gif', 'aboutmePass', 'aboutmePassM', 'about');
+			break;
+		case "blog.php":
+			onPage = new Page('Blog', 'blog', 'gifff', 'blogPass', 'blogPassM', 'blog');
+			break;
+		case "contact.php":
+			onPage = new Page('Contact', 'contact', 'giff', 'contactPass', 'contactPassM', 'contact');
+			break;
 	}
-	if(currentPage === "about.php"){
-		document.getElementById('backTitle').innerHTML = '<h1>About Me</h1>';
+
+	//SET PAGE TITLE
+
+	document.getElementById('backTitle').innerHTML = '<h1>' + onPage.pageTitle + '</h1>';
+
+	//ONCLICK EVENTS
+
+	var nextPage;
+	var nextPageM;
+
+	for (var p = 1; p < 5; p++){
+		nextPage = document.getElementById('pagepass_'+p);
+		if (typeof window.addEventListener === 'function'){
+			(function (_nextPage) {
+				nextPage.addEventListener('click', function(){
+					if(_nextPage.className == 'mywork'){
+						changePage('index');
+					}
+					if(_nextPage.className == 'aboutme'){
+						changePage('about');
+					}
+					if(_nextPage.className == 'blog'){
+						changePage('blog');
+					}
+					if(_nextPage.className == 'contact'){
+						changePage('contact');
+					}
+				});
+			})(nextPage);
+		}
 	}
-	if(currentPage === "blog.php"){
-		document.getElementById('backTitle').innerHTML = '<h1>Blog</h1>';
+
+	for (var pm = 1; pm < 5; pm++){
+		nextPageM = document.getElementById('pagepassM_'+pm);
+		if (typeof window.addEventListener === 'function'){
+			(function (_nextPageM) {
+				nextPageM.addEventListener('click', function(){
+					if(_nextPageM.className == 'mywork'){
+						changePage('index');
+					}
+					if(_nextPageM.className == 'aboutme'){
+						changePage('about');
+					}
+					if(_nextPageM.className == 'blog'){
+						changePage('blog');
+					}
+					if(_nextPageM.className == 'contact'){
+						changePage('contact');
+					}
+				});
+			})(nextPageM);
+		}
 	}
-	if(currentPage === "contact.php"){
-		document.getElementById('backTitle').innerHTML = '<h1>Contact</h1>';
-	}
-
-	//FADE IN BACKGROUND ON LOAD
-
-	$('body').velocity("fadeIn", { duration: 1000 })
-
-	//GRAB ONCLICK EVENT FOR PAGE EXIT ANIMATION
-
-	document.getElementById("myworkPass").addEventListener("click", function() {
-		changePage('index');
-	}, false);
-
-	document.getElementById("myworkPassM").addEventListener("click", function() {
-		changePage('index');
-	}, false);
-
-	document.getElementById("aboutmePass").addEventListener("click", function() {
-		changePage('about');
-	}, false);
-
-	document.getElementById("aboutmePassM").addEventListener("click", function() {
-		changePage('about');
-	}, false);
-
-	document.getElementById("contactPass").addEventListener("click", function() {
-		changePage('contact');
-	}, false);
-
-	document.getElementById("contactPassM").addEventListener("click", function() {
-		changePage('contact');
-	}, false);
 
 	//SET ACTIVE PAGE CSS
 
-	var indexPage = window.location.href;
+		var className = document.getElementsByClassName(onPage.animationClass);
 
-	if(window.location.href.indexOf("index") > -1 || indexPage === 'http://elliotgrabish.com/' || window.location.href.indexOf("altan") > -1 || 
-		window.location.href.indexOf("torontofacilities") > -1 || window.location.href.indexOf("notredame") > -1 ||
-		window.location.href.indexOf("nakedstock") > -1) {
-		var myWork = document.getElementsByClassName('mywork');
+		for(var i=0; i<className.length; i++) {
+			className[i].style.AnimationName = onPage.animationFrames;
+			className[i].style.webkitAnimationName = onPage.animationFrames;
 
-		for(var i=0; i<myWork.length; i++) {
-			myWork[i].style.AnimationName = "giffff";
-			myWork[i].style.webkitAnimationName = "giffff";
+			className[i].style.AnimationDuration = '1s';
+			className[i].style.webkitAnimationDuration = '1s';
 
-			myWork[i].style.AnimationDuration = '1s';
-			myWork[i].style.webkitAnimationDuration = '1s';
+			className[i].style.animationIterationCount = 'infinite';
+			className[i].style.webkitAnimationIterationCount = 'infinite';
 
-			myWork[i].style.animationIterationCount = 'infinite';
-			myWork[i].style.webkitAnimationIterationCount = 'infinite';
-
-			myWork[i].style.border = '3px solid #39ffec';
-		}	
-	}
-
-	if(window.location.href.indexOf("about") > -1) {
-		var aboutMe = document.getElementsByClassName('aboutme');
-
-		for(var i=0; i<aboutMe.length; i++) {
-			aboutMe[i].style.AnimationName = "gif";
-			aboutMe[i].style.webkitAnimationName = "gif";
-
-			aboutMe[i].style.AnimationDuration = '1s';
-			aboutMe[i].style.webkitAnimationDuration = '1s';
-
-			aboutMe[i].style.animationIterationCount = 'infinite';
-			aboutMe[i].style.webkitAnimationIterationCount = 'infinite';
-
-			aboutMe[i].style.border = '3px solid #39ffec';
+			className[i].style.border = '3px solid #39ffec';
 		}
-	}
-
-	if(window.location.href.indexOf("blog") > -1) {
-		var blog = document.getElemenstByClassName('blog');
-
-		for(var i=0; i<blog.length; i++) {
-			blog[i].style.AnimationName = "gifff";
-			blog[i].style.webkitAnimationName = "gifff";
-
-			blog[i].style.AnimationDuration = '1s';
-			blog[i].style.webkitAnimationDuration = '1s';
-
-			blog[i].style.animationIterationCount = 'infinite';
-			blog[i].style.webkitAnimationIterationCount = 'infinite';
-
-			blog[i].style.border = '3px solid #39ffec';
-		}
-	}
-
-	if(window.location.href.indexOf("contact") > -1) {
-		var contact = document.getElementsByClassName('contact');
-
-		for(var i=0; i<contact.length; i++) {
-			contact[i].style.AnimationName = "giff";
-			contact[i].style.webkitAnimationName = "giff";
-
-			contact[i].style.AnimationDuration = '1s';
-			contact[i].style.webkitAnimationDuration = '1s';
-
-			contact[i].style.animationIterationCount = 'infinite';
-			contact[i].style.webkitAnimationIterationCount = 'infinite';
-
-			contact[i].style.border = '3px solid #39ffec';
-		}
-	}
 
 	//MOBILE MENU DISPLAY
 
@@ -133,8 +146,8 @@ $(document).ready(function () {
 	//burger is clicked
 	$('.burger').click(function(){
 
-		//Jquery incase Vh (css: viewport height) does not work for menu div
-		var clientHeight = $( window ).height();
+		//get view port height
+		var clientHeight = $(window).height();
 		$('#menuOverlay').css('height', clientHeight);
 
 		//fade out burger
@@ -143,8 +156,7 @@ $(document).ready(function () {
 		//fade in menu components
 		$('#menuOverlay').velocity("fadeIn", { duration: 1000 });
 		$('.mobileNav').velocity("fadeIn", { duration: 1000 });
-		$('.cross').velocity("fadeIn", { duration: 1000 });
-
+		
 		//hide ability to scroll
 		$('html, body').css({
 			'overflow': 'hidden',
@@ -155,7 +167,7 @@ $(document).ready(function () {
 		$('.cross').velocity("fadeIn", { duration: 1000 }).click(function(){
 
 			$('#menuOverlay').velocity("fadeOut", { duration: 1000 });
-			$('.cross').velocity("fadeOut", { duration: 1000 });
+			
 			$('.burger').velocity("fadeIn", { duration: 1000 });
 			$('html, body').css({
 				'overflow-y': 'auto',
@@ -168,94 +180,11 @@ $(document).ready(function () {
 
 	function changePage(goToPage){
 
-		//get current page name
-		var path = window.location.pathname;
-		var currentPage = path.split("/").pop();
+		$('html').velocity('fadeOut', 1000, function() {
 
-		if(currentPage === "index.php"){
-
-			$('html').velocity('fadeOut', 1000, function() { 
-
-				var currentURL = window.location.pathname;
-				var shortURL = currentURL.substring(0, currentURL.lastIndexOf('/'));			
-				location.href = shortURL + '/' + goToPage + '.php';
-			});
-		}
-
-		if(currentPage === ""){
-
-			$('html').velocity('fadeOut', 1000, function() { 
-
-				var currentURL = window.location.pathname;
-				var shortURL = currentURL.substring(0, currentURL.lastIndexOf('/'));			
-				location.href = shortURL + '/' + goToPage + '.php';
-			});
-		}
-
-		if(currentPage === "about.php"){
-
-			$('html').velocity('fadeOut', 1000, function() { 
-
-				var currentURL = window.location.pathname;
-				var shortURL = currentURL.substring(0, currentURL.lastIndexOf('/'));			
-				location.href = shortURL + '/' + goToPage + '.php';
-
-			});
-		}
-
-		if(currentPage === "contact.php"){
-
-			$('html').velocity('fadeOut', 1000, function() { 
-
-				var currentURL = window.location.pathname;
-				var shortURL = currentURL.substring(0, currentURL.lastIndexOf('/'));			
-				location.href = shortURL + '/' + goToPage + '.php';
-
-			});
-		}
-
-		if(currentPage === "altan.php"){
-
-			$('html').velocity('fadeOut', 1000, function() { 
-
-				var currentURL = window.location.pathname;
-				var shortURL = currentURL.substring(0, currentURL.lastIndexOf('/'));			
-				location.href = shortURL + '/' + goToPage + '.php';
-
-			});
-		}
-
-		if(currentPage === "torontofacilities.php"){
-
-			$('html').velocity('fadeOut', 1000, function() { 
-
-				var currentURL = window.location.pathname;
-				var shortURL = currentURL.substring(0, currentURL.lastIndexOf('/'));			
-				location.href = shortURL + '/' + goToPage + '.php';
-
-			});
-		}
-
-		if(currentPage === "notredame.php"){
-
-			$('html').velocity('fadeOut', 1000, function() { 
-
-				var currentURL = window.location.pathname;
-				var shortURL = currentURL.substring(0, currentURL.lastIndexOf('/'));			
-				location.href = shortURL + '/' + goToPage + '.php';
-
-			});
-		}
-
-		if(currentPage === "nakedstock.php"){
-
-			$('html').velocity('fadeOut', 1000, function() { 
-
-				var currentURL = window.location.pathname;
-				var shortURL = currentURL.substring(0, currentURL.lastIndexOf('/'));			
-				location.href = shortURL + '/' + goToPage + '.php';
-
-			});
-		}
+			var currentURL = window.location.pathname;
+			var shortURL = currentURL.substring(0, currentURL.lastIndexOf('/'));
+			location.href = shortURL + '/' + goToPage + '.php';
+		});
 	}
 });

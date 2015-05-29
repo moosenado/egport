@@ -10,13 +10,14 @@ body{
 	margin: 0 0 80px;
 	background: linear-gradient(182deg, #ffffff, #cecece);
 	background-size: 100% 100%;
+	display: none;
 }
 
 html{
 	position: relative; /* for sticky footer */
-    min-height: 100%;
-    overflow-x: hidden;
-    overflow-y: scroll;
+	min-height: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 
 /* -------- COMMON STYLING -------- */
@@ -29,7 +30,6 @@ p{
 	font-size: 14px;
 	color: #4d4d4d;
 }
-
 
 h2{
 	font-size: 25px;
@@ -69,11 +69,10 @@ h2{
 	top: 0px;
 	left: 0px;
 	width: 100%;
-	height:100vh;
-    color:#fff;
-    z-index: 4;
+	color:#fff;
+	z-index: 4;
 	overflow: hidden;
-    background: linear-gradient(359deg, rgba(255, 255, 255, 0.8), rgba(206, 206, 206, 0.8));
+	background: linear-gradient(359deg, rgba(255, 255, 255, 0.8), rgba(206, 206, 206, 0.8));
 	background-size: 100% 100%;
 	display: none;
 }
@@ -111,7 +110,7 @@ nav{
 	position: relative;
 	width: 300px;
 	height: 150px;
-	margin: 20px auto;
+	margin: 20px auto 100px auto;
 }
 
 #logo img{
@@ -124,17 +123,17 @@ nav{
 #logo img.bottom_image{
 	opacity:0;
 
- 	-webkit-animation:fade ease-in 1;  
- 	-moz-animation:fade ease-in 1;
- 	animation:fade ease-in 1;
+	-webkit-animation:fade ease-in 1;  
+	-moz-animation:fade ease-in 1;
+	animation:fade ease-in 1;
 
- 	-webkit-animation-duration: 2s;
- 	-moz-animation-duration: 2s;
- 	animation-duration: 2s;
- 
- 	-webkit-animation-fill-mode:forwards;
- 	-moz-animation-fill-mode:forwards;
- 	animation-fill-mode:forwards;
+	-webkit-animation-duration: 2s;
+	-moz-animation-duration: 2s;
+	animation-duration: 2s;
+
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
 }
 
 .ulLeft{
@@ -142,16 +141,16 @@ nav{
 	margin-top: 100px;
 	margin-left: 10%;
 	-webkit-animation:fade ease-in 1;  
- 	-moz-animation:fade ease-in 1;
- 	animation:fade ease-in 1;
+	-moz-animation:fade ease-in 1;
+	animation:fade ease-in 1;
 
- 	-webkit-animation-duration: 1s;
- 	-moz-animation-duration: 1s;
- 	animation-duration: 1s;
- 
- 	-webkit-animation-fill-mode:forwards;
- 	-moz-animation-fill-mode:forwards;
- 	animation-fill-mode:forwards;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	animation-duration: 1s;
+
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
 }
 
 .ulLeft li{
@@ -176,14 +175,13 @@ nav{
 }
 
 .ulLeft li:first-child{
-	margin: 50px auto;
-    background-image: url(../images/hover.gif);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100px;
-    height: 52px;
-    /* no fade between frames */
-    opacity: .4;
+	background-image: url(../images/hover.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100px;
+	height: 52px;
+	/* no fade between frames */
+	opacity: .4;
 	-webkit-transition: opacity .8s ease-in-out;
 	-moz-transition: opacity .8s ease-in-out;
 	-o-transition: opacity .8s ease-in-out;
@@ -204,14 +202,13 @@ nav{
 }
 
 .ulLeft li:nth-child(2){
-	margin: 50px auto;
-    background-image: url(../images/hover.gif);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100px;
-    height: 52px;
-    /* no fade between frames */
-    opacity: .4;
+	background-image: url(../images/hover.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100px;
+	height: 52px;
+	/* no fade between frames */
+	opacity: .4;
 	-webkit-transition: opacity .8s ease-in-out;
 	-moz-transition: opacity .8s ease-in-out;
 	-o-transition: opacity .8s ease-in-out;
@@ -236,16 +233,16 @@ nav{
 	margin-top: 100px;
 	margin-right: 10%;
 	-webkit-animation:fade ease-in 1;  
- 	-moz-animation:fade ease-in 1;
- 	animation:fade ease-in 1;
+	-moz-animation:fade ease-in 1;
+	animation:fade ease-in 1;
 
- 	-webkit-animation-duration: 1.2s;
- 	-moz-animation-duration: 1.2s;
- 	animation-duration: 1.2s;
- 
- 	-webkit-animation-fill-mode:forwards;
- 	-moz-animation-fill-mode:forwards;
- 	animation-fill-mode:forwards;
+	-webkit-animation-duration: 1.2s;
+	-moz-animation-duration: 1.2s;
+	animation-duration: 1.2s;
+
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
 }
 
 .ulRight li{
@@ -269,14 +266,13 @@ nav{
 }
 
 .ulRight li:first-child{
-	margin: 50px auto;
-    background-image: url(../images/hover.gif);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100px;
-    height: 52px;
-    /* no fade between frames */
-    opacity: .4;
+	background-image: url(../images/hover.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100px;
+	height: 52px;
+	/* no fade between frames */
+	opacity: .4;
 	-webkit-transition: opacity .8s ease-in-out;
 	-moz-transition: opacity .8s ease-in-out;
 	-o-transition: opacity .8s ease-in-out;
@@ -297,14 +293,13 @@ nav{
 }
 
 .ulRight li:nth-child(2){
-	margin: 50px auto;
-    background-image: url(../images/hover.gif);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100px;
-    height: 52px;
-    /* no fade between frames */
-    opacity: .4;
+	background-image: url(../images/hover.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100px;
+	height: 52px;
+	/* no fade between frames */
+	opacity: .4;
 	-webkit-transition: opacity .8s ease-in-out;
 	-moz-transition: opacity .8s ease-in-out;
 	-o-transition: opacity .8s ease-in-out;
@@ -326,33 +321,22 @@ nav{
 
 #backTitle{
 	position: absolute;
-	top: -50%;
+	top: -30%;
 	margin-left: auto;
 	margin-right: auto;
 	left: 0;
 	right: 0;
 	font-family: 'Lobster', cursive;
 	font-size: 120px;
-	color: rgba(107, 107, 107, 0.1);
+	color: rgb(107, 107, 107);
 	text-align: center;
+	opacity: .1;
 	max-width: 100%;
 	-o-transform: rotate(-5deg);
-    -khtml-transform: rotate(-5deg);
-    -webkit-transform: rotate(-5deg); 
-    -moz-transform: rotate(-5deg);
-    z-index: -1;
-
-    -webkit-animation:fade ease-in 1;  
- 	-moz-animation:fadge ease-in 1;
- 	animation:fade ease-in 1;
-
- 	-webkit-animation-duration: .5s;
- 	-moz-animation-duration: .5s;
- 	animation-duration: 5.s;
- 
- 	-webkit-animation-fill-mode:forwards;
- 	-moz-animation-fill-mode:forwards;
- 	animation-fill-mode:forwards;
+	-khtml-transform: rotate(-5deg);
+	-webkit-transform: rotate(-5deg); 
+	-moz-transform: rotate(-5deg);
+	z-index: -1;
 }
 
 .innerTitle{
@@ -368,189 +352,189 @@ nav{
 /* -------- ANIMATION KEY FRAMES -------- */
 
 @-webkit-keyframes menuGradient {
-    0%{background-position:50% 0%}
-    50%{background-position:51% 100%}
-    100%{background-position:50% 0%}
+	0%{background-position:50% 0%}
+	50%{background-position:51% 100%}
+	100%{background-position:50% 0%}
 }
 @-moz-keyframes menuGradient {
-    0%{background-position:50% 0%}
-    50%{background-position:51% 100%}
-    100%{background-position:50% 0%}
+	0%{background-position:50% 0%}
+	50%{background-position:51% 100%}
+	100%{background-position:50% 0%}
 }
 @-o-keyframes menuGradient {
-    0%{background-position:50% 0%}
-    50%{background-position:51% 100%}
-    100%{background-position:50% 0%}
+	0%{background-position:50% 0%}
+	50%{background-position:51% 100%}
+	100%{background-position:50% 0%}
 }
 @keyframes menuGradient { 
-    0%{background-position:50% 0%}
-    50%{background-position:51% 100%}
-    100%{background-position:50% 0%}
+	0%{background-position:50% 0%}
+	50%{background-position:51% 100%}
+	100%{background-position:50% 0%}
 }
 
 @keyframes fade {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+	from { opacity: 0; }
+	to   { opacity: 1; }
 }
 
 @-moz-keyframes fade {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+	from { opacity: 0; }
+	to   { opacity: 1; }
 }
 
 @-webkit-keyframes fade {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+	from { opacity: 0; }
+	to   { opacity: 1; }
 }
 
 @-ms-keyframes fade {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+	from { opacity: 0; }
+	to   { opacity: 1; }
 }
 
 @-o-keyframes fade {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+	from { opacity: 0; }
+	to   { opacity: 1; }
 }
 
 @keyframes gif {
-    0%   { background-image: url('../images/hover1.gif'); } 
-    33%  { background-image: url('../images/hover2.gif'); }
-    66%  { background-image: url('../images/hover3.gif'); }
-    100%  { background-image: url('../images/hover4.gif'); }
+	0%   { background-image: url('../images/hover1.gif'); } 
+	33%  { background-image: url('../images/hover2.gif'); }
+	66%  { background-image: url('../images/hover3.gif'); }
+	100%  { background-image: url('../images/hover4.gif'); }
 }
 
 @-moz-keyframes gif {
-    0%   { background-image: url('../images/hover1.gif'); } 
-    33%  { background-image: url('../images/hover2.gif'); }
-    66%  { background-image: url('../images/hover3.gif'); }
-    100%  { background-image: url('../images/hover4.gif'); }
+	0%   { background-image: url('../images/hover1.gif'); } 
+	33%  { background-image: url('../images/hover2.gif'); }
+	66%  { background-image: url('../images/hover3.gif'); }
+	100%  { background-image: url('../images/hover4.gif'); }
 }
 
 @-webkit-keyframes gif {
-    0%   { background-image: url('../images/hover1.gif'); } 
-    33%  { background-image: url('../images/hover2.gif'); }
-    66%  { background-image: url('../images/hover3.gif'); }
-    100%  { background-image: url('../images/hover4.gif'); }
+	0%   { background-image: url('../images/hover1.gif'); } 
+	33%  { background-image: url('../images/hover2.gif'); }
+	66%  { background-image: url('../images/hover3.gif'); }
+	100%  { background-image: url('../images/hover4.gif'); }
 }
 
 @-ms-keyframes gif {
-    0%   { background-image: url('../images/hover1.gif'); } 
-    33%  { background-image: url('../images/hover2.gif'); }
-    66%  { background-image: url('../images/hover3.gif'); }
-    100%  { background-image: url('../images/hover4.gif'); }
+	0%   { background-image: url('../images/hover1.gif'); } 
+	33%  { background-image: url('../images/hover2.gif'); }
+	66%  { background-image: url('../images/hover3.gif'); }
+	100%  { background-image: url('../images/hover4.gif'); }
 }
 
 @-o-keyframes gif {
-    0%   { background-image: url('../images/hover1.gif'); } 
-    33%  { background-image: url('../images/hover2.gif'); }
-    66%  { background-image: url('../images/hover3.gif'); }
-    100%  { background-image: url('../images/hover4.gif'); }
+	0%   { background-image: url('../images/hover1.gif'); } 
+	33%  { background-image: url('../images/hover2.gif'); }
+	66%  { background-image: url('../images/hover3.gif'); }
+	100%  { background-image: url('../images/hover4.gif'); }
 }
 
 @keyframes giff {
-    0%   { background-image: url('../images/hover2-1.gif'); } 
-    33%  { background-image: url('../images/hover2-2.gif'); }
-    66%  { background-image: url('../images/hover2-3.gif'); }
-    100%  { background-image: url('../images/hover2-4.gif'); }
+	0%   { background-image: url('../images/hover2-1.gif'); } 
+	33%  { background-image: url('../images/hover2-2.gif'); }
+	66%  { background-image: url('../images/hover2-3.gif'); }
+	100%  { background-image: url('../images/hover2-4.gif'); }
 }
 
 @-moz-keyframes giff {
-    0%   { background-image: url('../images/hover2-1.gif'); } 
-    33%  { background-image: url('../images/hover2-2.gif'); }
-    66%  { background-image: url('../images/hover2-3.gif'); }
-    100%  { background-image: url('../images/hover2-4.gif'); }
+	0%   { background-image: url('../images/hover2-1.gif'); } 
+	33%  { background-image: url('../images/hover2-2.gif'); }
+	66%  { background-image: url('../images/hover2-3.gif'); }
+	100%  { background-image: url('../images/hover2-4.gif'); }
 }
 
 @-webkit-keyframes giff {
-    0%   { background-image: url('../images/hover2-1.gif'); } 
-    33%  { background-image: url('../images/hover2-2.gif'); }
-    66%  { background-image: url('../images/hover2-3.gif'); }
-    100%  { background-image: url('../images/hover2-4.gif'); }
+	0%   { background-image: url('../images/hover2-1.gif'); } 
+	33%  { background-image: url('../images/hover2-2.gif'); }
+	66%  { background-image: url('../images/hover2-3.gif'); }
+	100%  { background-image: url('../images/hover2-4.gif'); }
 }
 
 @-ms-keyframes giff {
-    0%   { background-image: url('../images/hover2-1.gif'); } 
-    33%  { background-image: url('../images/hover2-2.gif'); }
-    66%  { background-image: url('../images/hover2-3.gif'); }
-    100%  { background-image: url('../images/hover2-4.gif'); }
+	0%   { background-image: url('../images/hover2-1.gif'); } 
+	33%  { background-image: url('../images/hover2-2.gif'); }
+	66%  { background-image: url('../images/hover2-3.gif'); }
+	100%  { background-image: url('../images/hover2-4.gif'); }
 }
 
 @-o-keyframes giff {
-    0%   { background-image: url('../images/hover2-1.gif'); } 
-    33%  { background-image: url('../images/hover2-2.gif'); }
-    66%  { background-image: url('../images/hover2-3.gif'); }
-    100%  { background-image: url('../images/hover2-4.gif'); }
+	0%   { background-image: url('../images/hover2-1.gif'); } 
+	33%  { background-image: url('../images/hover2-2.gif'); }
+	66%  { background-image: url('../images/hover2-3.gif'); }
+	100%  { background-image: url('../images/hover2-4.gif'); }
 }
 
 @keyframes gifff {
-    0%   { background-image: url('../images/hover3-1.gif'); } 
-    33%  { background-image: url('../images/hover3-2.gif'); }
-    66%  { background-image: url('../images/hover3-3.gif'); }
-    100%  { background-image: url('../images/hover3-4.gif'); }
+	0%   { background-image: url('../images/hover3-1.gif'); } 
+	33%  { background-image: url('../images/hover3-2.gif'); }
+	66%  { background-image: url('../images/hover3-3.gif'); }
+	100%  { background-image: url('../images/hover3-4.gif'); }
 }
 
 @-moz-keyframes gifff {
-    0%   { background-image: url('../images/hover3-1.gif'); } 
-    33%  { background-image: url('../images/hover3-2.gif'); }
-    66%  { background-image: url('../images/hover3-3.gif'); }
-    100%  { background-image: url('../images/hover3-4.gif'); }
+	0%   { background-image: url('../images/hover3-1.gif'); } 
+	33%  { background-image: url('../images/hover3-2.gif'); }
+	66%  { background-image: url('../images/hover3-3.gif'); }
+	100%  { background-image: url('../images/hover3-4.gif'); }
 }
 
 @-webkit-keyframes gifff {
-    0%   { background-image: url('../images/hover3-1.gif'); } 
-    33%  { background-image: url('../images/hover3-2.gif'); }
-    66%  { background-image: url('../images/hover3-3.gif'); }
-    100%  { background-image: url('../images/hover3-4.gif'); }
+	0%   { background-image: url('../images/hover3-1.gif'); } 
+	33%  { background-image: url('../images/hover3-2.gif'); }
+	66%  { background-image: url('../images/hover3-3.gif'); }
+	100%  { background-image: url('../images/hover3-4.gif'); }
 }
 
 @-ms-keyframes gifff {
-    0%   { background-image: url('../images/hover3-1.gif'); } 
-    33%  { background-image: url('../images/hover3-2.gif'); }
-    66%  { background-image: url('../images/hover3-3.gif'); }
-    100%  { background-image: url('../images/hover3-4.gif'); }
+	0%   { background-image: url('../images/hover3-1.gif'); } 
+	33%  { background-image: url('../images/hover3-2.gif'); }
+	66%  { background-image: url('../images/hover3-3.gif'); }
+	100%  { background-image: url('../images/hover3-4.gif'); }
 }
 
 @-o-keyframes gifff {
-    0%   { background-image: url('../images/hover3-1.gif'); } 
-    33%  { background-image: url('../images/hover3-2.gif'); }
-    66%  { background-image: url('../images/hover3-3.gif'); }
-    100%  { background-image: url('../images/hover3-4.gif'); }
+	0%   { background-image: url('../images/hover3-1.gif'); } 
+	33%  { background-image: url('../images/hover3-2.gif'); }
+	66%  { background-image: url('../images/hover3-3.gif'); }
+	100%  { background-image: url('../images/hover3-4.gif'); }
 }
 
 @keyframes giffff {
-    0%   { background-image: url('../images/hover4-1.gif'); } 
-    33%  { background-image: url('../images/hover4-2.gif'); }
-    66%  { background-image: url('../images/hover4-3.gif'); }
-    100%  { background-image: url('../images/hover4-4.gif'); }
+	0%   { background-image: url('../images/hover4-1.gif'); } 
+	33%  { background-image: url('../images/hover4-2.gif'); }
+	66%  { background-image: url('../images/hover4-3.gif'); }
+	100%  { background-image: url('../images/hover4-4.gif'); }
 }
 
 @-moz-keyframes giffff {
-    0%   { background-image: url('../images/hover4-1.gif'); } 
-    33%  { background-image: url('../images/hover4-2.gif'); }
-    66%  { background-image: url('../images/hover4-3.gif'); }
-    100%  { background-image: url('../images/hover4-4.gif'); }
+	0%   { background-image: url('../images/hover4-1.gif'); } 
+	33%  { background-image: url('../images/hover4-2.gif'); }
+	66%  { background-image: url('../images/hover4-3.gif'); }
+	100%  { background-image: url('../images/hover4-4.gif'); }
 }
 
 @-webkit-keyframes giffff {
-    0%   { background-image: url('../images/hover4-1.gif'); } 
-    33%  { background-image: url('../images/hover4-2.gif'); }
-    66%  { background-image: url('../images/hover4-3.gif'); }
-    100%  { background-image: url('../images/hover4-4.gif'); }
+	0%   { background-image: url('../images/hover4-1.gif'); } 
+	33%  { background-image: url('../images/hover4-2.gif'); }
+	66%  { background-image: url('../images/hover4-3.gif'); }
+	100%  { background-image: url('../images/hover4-4.gif'); }
 }
 
 @-ms-keyframes giffff {
-    0%   { background-image: url('../images/hover4-1.gif'); } 
-    33%  { background-image: url('../images/hover4-2.gif'); }
-    66%  { background-image: url('../images/hover4-3.gif'); }
-    100%  { background-image: url('../images/hover4-4.gif'); }
+	0%   { background-image: url('../images/hover4-1.gif'); } 
+	33%  { background-image: url('../images/hover4-2.gif'); }
+	66%  { background-image: url('../images/hover4-3.gif'); }
+	100%  { background-image: url('../images/hover4-4.gif'); }
 }
 
 @-o-keyframes giffff {
-    0%   { background-image: url('../images/hover4-1.gif'); } 
-    33%  { background-image: url('../images/hover4-2.gif'); }
-    66%  { background-image: url('../images/hover4-3.gif'); }
-    100%  { background-image: url('../images/hover4-4.gif'); }
+	0%   { background-image: url('../images/hover4-1.gif'); } 
+	33%  { background-image: url('../images/hover4-2.gif'); }
+	66%  { background-image: url('../images/hover4-3.gif'); }
+	100%  { background-image: url('../images/hover4-4.gif'); }
 }
 
 /* -------- MAIN CONTENT -------- */
@@ -631,8 +615,8 @@ main{
 
 footer{
 	position: absolute;
-    left: 0;
-    bottom: 0;
+	left: 0;
+	bottom: 0;
 	height: 80px;
 	width: 100%;
 }
@@ -916,10 +900,10 @@ footer{
 		top: 0px;
 		left: 15px;
 		background-image: url(../images/burger1.gif);
-    	background-repeat: no-repeat;
-    	background-position: center;
-    	background-size: 60px 60px;
-    	width: 60px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 60px 60px;
+		width: 60px;
 		height: 60px;
 		animation: burger 0.5s infinite steps(3);
 		cursor: pointer;
@@ -931,10 +915,10 @@ footer{
 		top: 0px;
 		left: 15px;
 		background-image: url(../images/cross1.gif);
-    	background-repeat: no-repeat;
-    	background-position: center;
-    	background-size: 60px 60px;
-    	width: 60px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 60px 60px;
+		width: 60px;
 		height: 60px;
 		animation: cross 0.5s infinite steps(3);
 		cursor: pointer;
@@ -967,63 +951,63 @@ footer{
 	}
 
 	@keyframes burger {
-    	0%   { background-image: url('../images/burger1.gif'); } 
-    	50%  { background-image: url('../images/burger2.gif'); }
-    	100%  { background-image: url('../images/burger3.gif'); }
+		0%   { background-image: url('../images/burger1.gif'); } 
+		50%  { background-image: url('../images/burger2.gif'); }
+		100%  { background-image: url('../images/burger3.gif'); }
 	}
 
 	@-moz-keyframes burger {
-	    0%   { background-image: url('../images/burger1.gif'); } 
-	    50%  { background-image: url('../images/burger2.gif'); }
-	    100%  { background-image: url('../images/burger3.gif'); }
+		0%   { background-image: url('../images/burger1.gif'); } 
+		50%  { background-image: url('../images/burger2.gif'); }
+		100%  { background-image: url('../images/burger3.gif'); }
 	}
 
 	@-webkit-keyframes burger {
-	    0%   { background-image: url('../images/burger1.gif'); } 
-	    50%  { background-image: url('../images/burger2.gif'); }
-	    100%  { background-image: url('../images/burger3.gif'); }
+		0%   { background-image: url('../images/burger1.gif'); } 
+		50%  { background-image: url('../images/burger2.gif'); }
+		100%  { background-image: url('../images/burger3.gif'); }
 	}
 
 	@-ms-keyframes burger {
-	    0%   { background-image: url('../images/burger1.gif'); } 
-	    50%  { background-image: url('../images/burger2.gif'); }
-	    100%  { background-image: url('../images/burger3.gif'); }
+		0%   { background-image: url('../images/burger1.gif'); } 
+		50%  { background-image: url('../images/burger2.gif'); }
+		100%  { background-image: url('../images/burger3.gif'); }
 	}
 
 	@-o-keyframes burger {
-	    0%   { background-image: url('../images/burger1.gif'); } 
-	    50%  { background-image: url('../images/burger2.gif'); }
-	    100%  { background-image: url('../images/burger3.gif'); }
+		0%   { background-image: url('../images/burger1.gif'); } 
+		50%  { background-image: url('../images/burger2.gif'); }
+		100%  { background-image: url('../images/burger3.gif'); }
 	}
 
 	@keyframes cross {
-    	0%   { background-image: url('../images/cross1.gif'); } 
-    	50%  { background-image: url('../images/cross2.gif'); }
-    	100%  { background-image: url('../images/cross3.gif'); }
+		0%   { background-image: url('../images/cross1.gif'); } 
+		50%  { background-image: url('../images/cross2.gif'); }
+		100%  { background-image: url('../images/cross3.gif'); }
 	}
 
 	@-moz-keyframes cross {
-	    0%   { background-image: url('../images/cross1.gif'); } 
-	    50%  { background-image: url('../images/cross2.gif'); }
-	    100%  { background-image: url('../images/cross3.gif'); }
+		0%   { background-image: url('../images/cross1.gif'); } 
+		50%  { background-image: url('../images/cross2.gif'); }
+		100%  { background-image: url('../images/cross3.gif'); }
 	}
 
 	@-webkit-keyframes cross {
-	    0%   { background-image: url('../images/cross1.gif'); } 
-	    50%  { background-image: url('../images/cross2.gif'); }
-	    100%  { background-image: url('../images/cross3.gif'); }
+		0%   { background-image: url('../images/cross1.gif'); } 
+		50%  { background-image: url('../images/cross2.gif'); }
+		100%  { background-image: url('../images/cross3.gif'); }
 	}
 
 	@-ms-keyframes cross {
-	    0%   { background-image: url('../images/cross1.gif'); } 
-	    50%  { background-image: url('../images/cross2.gif'); }
-	    100%  { background-image: url('../images/cross3.gif'); }
+		0%   { background-image: url('../images/cross1.gif'); } 
+		50%  { background-image: url('../images/cross2.gif'); }
+		100%  { background-image: url('../images/cross3.gif'); }
 	}
 
 	@-o-keyframes cross {
-	    0%   { background-image: url('../images/burger1.gif'); } 
-	    50%  { background-image: url('../images/burger2.gif'); }
-	    100%  { background-image: url('../images/burger3.gif'); }
+		0%   { background-image: url('../images/burger1.gif'); } 
+		50%  { background-image: url('../images/burger2.gif'); }
+		100%  { background-image: url('../images/burger3.gif'); }
 	}
 	
 }

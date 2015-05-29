@@ -23,10 +23,10 @@
 	<div id="menuOverlay">
 		<div class="cross"></div>
 		<ul class="mobileNav">
-			<li class="mywork" onclick="changePage" id="myworkPassM"><a>My Work</a></li>
-			<li class="aboutme" onclick="changePage" id="aboutmePassM"><a>About Me</a></li>
-			<li class="blog" onclick="changePage" id="blogPassM"><a>Blog</a></li>
-			<li class="contact" onclick="changePage" id="contactPassM"><a>Contact</a></li>
+			<li class="mywork" onclick="changePage" id="pagepassM_1"><a>My Work</a></li>
+			<li class="aboutme" onclick="changePage" id="pagepassM_2"><a>About Me</a></li>
+			<li class="blog" onclick="changePage" id="pagepassM_3"><a>Blog</a></li>
+			<li class="contact" onclick="changePage" id="pagepassM_4"><a>Contact</a></li>
 		</ul>
 	</div>
 
@@ -46,25 +46,26 @@
 
 		<nav>
 			<ul class="ulLeft">
-				<li class="mywork" onclick="changePage" id="myworkPass"><a>My Work</a></li>
-				<li class="aboutme" onclick="changePage" id="aboutmePass"><a>About Me</a></li>
+				<li class="mywork" onclick="changePage" id="pagepass_1"><a>My Work</a></li>
+				<li class="aboutme" onclick="changePage" id="pagepass_2"><a>About Me</a></li>
 			</ul>
 			<ul class="ulRight">
-				<li class="blog" onclick="changePage" id="blogPass"><a>Blog</a></li>
-				<li class="contact" onclick="changePage" id="contactPass"><a>Contact</a></li>
+				<li class="blog" onclick="changePage" id="pagepass_3"><a>Blog</a></li>
+				<li class="contact" onclick="changePage" id="pagepass_4"><a>Contact</a></li>
 			</ul>
+		
+
+			<!-- LOGO -->
+
+			<div id="logo">
+
+				<img src="images/newlogo2nonesmall.png" title="EG Logo" alt="EG Logo" class="top_image"/>
+				
+				<!-- Fade below image in on load -->
+				<a href="http://www.elliotgrabish.com"><img src="images/newlogo2.png" title="EG Logo" alt="EG Logo" class="bottom_image" /></a>
+
+			</div>
 		</nav>
-
-		<!-- LOGO -->
-
-		<div id="logo">
-
-			<img src="images/newlogo2nonesmall.png" title="EG Logo" alt="EG Logo" class="top_image"/>
-			
-			<!-- Fade below image in on load -->
-			<img src="images/newlogo2.png" title="EG Logo" alt="EG Logo" class="bottom_image" />
-
-		</div>
 
 	</header>
 

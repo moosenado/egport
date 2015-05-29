@@ -106,7 +106,7 @@
 
 	<!-- FOOTER -->
 
-<!-- 	<footer>
+	<!-- <footer>
 
 		<div id="page_info">
 
@@ -136,6 +136,8 @@ $(document).ready(function () {
 
     	}, 400)
 
+	//RAISE OPACITY WHEN SCOLLING DOWN ON MOBILE
+
 	var clientWidth = $( window ).width();
 
 	if (clientWidth <= 820){
@@ -158,19 +160,19 @@ $(document).ready(function () {
 	//TOGGLE PROJECT SLIDE ON CLICK
 
 	$('#proj1').click(function() {
-  		$('#proj1').toggle("slide", 3000);
+  		$('#proj1').velocity({'marginLeft':'-=4000'},2000);
 	});
 
 	$('#proj2').click(function() {
-  		$('#proj2').toggle("slide", 3000);
+  		$('#proj2').velocity({'marginRight':'-=4000'},2000);
 	});
 
 	$('#proj3').click(function() {
-  		$('#proj3').toggle("slide", 3000);
+  		$('#proj3').velocity({'marginLeft':'-=4000'},2000);
 	});
 
 	$('#proj4').click(function() {
-  		$('#proj4').toggle("slide", 3000);
+  		$('#proj4').velocity({'marginRight':'-=4000'},2000);
 	});
 
 	//PORTFOLIO LISTENERS
@@ -191,17 +193,19 @@ $(document).ready(function () {
 		portPage('nakedstock');
 	}, false);
 
+	//CHANGE PAGE
+
 	function portPage(goToPage){
 
-			$('html').velocity('fadeOut', 1000, function() { 
+		$('html').velocity('fadeOut', 1000, function() { 
 
-				var currentURL = window.location.pathname;
-				var shortURL = currentURL.substring(0, currentURL.lastIndexOf('/'));			
-				location.href = shortURL + '/' + goToPage + '.php';
+			var currentURL = window.location.pathname;
+			var shortURL = currentURL.substring(0, currentURL.lastIndexOf('/'));			
+			location.href = shortURL + '/' + goToPage + '.php';
 
 			});
-	}
-});
+		}
+	});
 
 </script>
 
