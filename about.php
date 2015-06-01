@@ -35,17 +35,8 @@ $(document).ready(function () {
 
 	//SLIDE IN PROFILE PIC
 
-	var i = 1;
-
 	$('#mePic').show('slide', { direction: 'left' }, 1000);
 
-	var go = setInterval(function(){
-    
-		$('#leftcol_'+i).show('slide', { direction: 'right' }, 1000);
-    
-            i++;
-
-    	}, 400)
 });
 
 </script>

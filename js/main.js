@@ -34,14 +34,10 @@ $(document).ready(function () {
 	};
 
 	var Page = Class({
-		initialize: function(pageTitle, animationClass, animationFrames, eventListenClass, eventListenClassM, toPage) {
+		initialize: function(pageTitle, animationClass, animationFrames) {
 			this.pageTitle = pageTitle;
-			this.currentPage = currentPage;
 			this.animationClass  = animationClass;
 			this.animationFrames  = animationFrames;
-			this.eventListenClass  = eventListenClass;
-			this.eventListenClassM  = eventListenClassM;
-			this.toPage  = toPage;
 		}
 	});
 
@@ -54,16 +50,16 @@ $(document).ready(function () {
 		case "notredame.php":
 		case "torontofacilities.php":
 		case "nakedstock.php":
-			onPage = new Page('My Work', 'mywork', 'giffff', 'myworkPass', 'myworkPassM', 'index');
+			onPage = new Page('My Work', 'mywork', 'giffff');
 			break;
 		case "about.php":
-			onPage = new Page('About Me', 'aboutme', 'gif', 'aboutmePass', 'aboutmePassM', 'about');
+			onPage = new Page('About Me', 'aboutme', 'gif');
 			break;
 		case "blog.php":
-			onPage = new Page('Blog', 'blog', 'gifff', 'blogPass', 'blogPassM', 'blog');
+			onPage = new Page('Blog', 'blog', 'gifff');
 			break;
 		case "contact.php":
-			onPage = new Page('Contact', 'contact', 'giff', 'contactPass', 'contactPassM', 'contact');
+			onPage = new Page('Contact', 'contact', 'giff');
 			break;
 	}
 
@@ -134,7 +130,7 @@ $(document).ready(function () {
 			className[i].style.animationIterationCount = 'infinite';
 			className[i].style.webkitAnimationIterationCount = 'infinite';
 
-			className[i].style.border = '3px solid #39ffec';
+			className[i].style.border = '4px solid #39ffec';
 		}
 
 	//MOBILE MENU DISPLAY

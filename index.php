@@ -157,24 +157,6 @@ $(document).ready(function () {
 		});
 	}
 
-	//TOGGLE PROJECT SLIDE ON CLICK
-
-	$('#proj1').click(function() {
-  		$('#proj1').velocity({'marginLeft':'-=4000'},2000);
-	});
-
-	$('#proj2').click(function() {
-  		$('#proj2').velocity({'marginRight':'-=4000'},2000);
-	});
-
-	$('#proj3').click(function() {
-  		$('#proj3').velocity({'marginLeft':'-=4000'},2000);
-	});
-
-	$('#proj4').click(function() {
-  		$('#proj4').velocity({'marginRight':'-=4000'},2000);
-	});
-
 	//PORTFOLIO LISTENERS
 
 	document.getElementById("proj1").addEventListener("click", function() {
