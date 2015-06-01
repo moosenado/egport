@@ -819,6 +819,12 @@ footer{
 	font-size: 25px;
 }
 
+#fapadding{
+	font-size: 25px;
+	display: block;
+	margin-bottom: 30px;
+}
+
 /* -------- MEDIA QUERIES -------- */
 
 @media only screen and (max-width: 1000px){
