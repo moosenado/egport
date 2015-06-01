@@ -187,15 +187,6 @@ $(document).ready(function () {
 
 	function changePage(goToPage){
 
-		//SHRINK LOGO
-
-		$(".bottom_image").velocity({
-            "width": 200,
-            "height": 140,
-            "left": 50,
-            "top":  50
-        }, 1300 );
-
         //EXPAND MENU
 
         $(".mobileNav li").velocity({
