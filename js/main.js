@@ -140,7 +140,9 @@ $(document).ready(function () {
 	$('.mobileNav').hide();
 
 	//burger is clicked
-	$('.burger').click(function(){
+	$('.burger').click(function(e){
+
+		e.preventDefault();
 
 		//get view port height
 
@@ -161,8 +163,14 @@ $(document).ready(function () {
 			'height': '100%'
 		});
 
-		//exit is fired
-		$('.cross').velocity("fadeIn", { duration: 1000 }).click(function(){
+		//fade in cross
+		$('.cross').velocity("fadeIn", { duration: 1000 });
+
+		//cross is clicked
+
+		$('.cross').click(function(e){
+
+			e.preventDefault();
 
 			$('#menuOverlay').velocity("fadeOut", { duration: 1000 });
 			
