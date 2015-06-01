@@ -166,6 +166,8 @@ $(document).ready(function () {
 		//fade in cross
 		$('.cross').velocity("fadeIn", { duration: 1000 });
 
+		});
+
 		//cross is clicked
 
 		$('.cross').click(function(e){
@@ -180,7 +182,6 @@ $(document).ready(function () {
 				'height': 'auto'
 			});
 		});
-	});
 
 	//PAGE EXIT ANIMATION
 
