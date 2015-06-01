@@ -130,7 +130,7 @@ $(document).ready(function () {
 			className[i].style.animationIterationCount = 'infinite';
 			className[i].style.webkitAnimationIterationCount = 'infinite';
 
-			className[i].style.border = '4px solid #39ffec';
+			className[i].style.border = '3px solid #39ffec';
 		}
 
 	//MOBILE MENU DISPLAY
@@ -177,6 +177,25 @@ $(document).ready(function () {
 	//PAGE EXIT ANIMATION
 
 	function changePage(goToPage){
+
+		//SHRINK LOGO
+
+		$(".bottom_image").velocity({
+            "width": 200,
+            "height": 140,
+            "left": 50,
+            "top":  50
+        }, 1300 );
+
+        //EXPAND MENU
+
+        $(".mobileNav li").velocity({
+            "width": 200,
+            "left": 50,
+            "top":  50
+        }, 1300 );
+
+        //FADE PAGE
 
 		$('html').velocity('fadeOut', 1000, function() {
 

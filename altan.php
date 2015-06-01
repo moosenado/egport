@@ -41,9 +41,9 @@
 
 			</div>
 
-			<div class="visitSite">
-				<a href="http://www.altansafeoutdoors.com" target="_blank">VISIT SITE</a>
-			</div>
+			<a href="http://www.altansafeoutdoors.com" target="_blank"><div class="visitSite">
+				VISIT SITE
+			</div></a>
 
 			<h2 class="titlePadding">Desktop Design</h2>
 

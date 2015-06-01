@@ -69,8 +69,8 @@ h2{
 	top: 0px;
 	left: 0px;
 	width: 100%;
-    color:#fff;
-    z-index: 4;
+	color:#fff;
+	z-index: 4;
 	overflow: hidden;
 	background: linear-gradient(359deg, rgba(255, 255, 255, 0.8), rgba(206, 206, 206, 0.8));
 	background-size: 100% 100%;
@@ -180,7 +180,6 @@ nav{
 	background-position: center;
 	width: 100px;
 	height: 52px;
-	/* no fade between frames */
 	opacity: .4;
 	-webkit-transition: opacity .8s ease-in-out;
 	-moz-transition: opacity .8s ease-in-out;
@@ -193,7 +192,6 @@ nav{
 	animation: giffff 0.5s infinite steps(3);
 	-webkit-animation: giffff 0.5s infinite steps(3);
 	-moz-animation: giffff 0.5s infinite steps(3);
-	/* animation: giffy 0.5s infinite linear; */
 	opacity: .8;
 }
 
@@ -207,7 +205,6 @@ nav{
 	background-position: center;
 	width: 100px;
 	height: 52px;
-	/* no fade between frames */
 	opacity: .4;
 	-webkit-transition: opacity .8s ease-in-out;
 	-moz-transition: opacity .8s ease-in-out;
@@ -220,7 +217,6 @@ nav{
 	animation: gif 0.5s infinite steps(3);
 	-webkit-animation: gif 0.5s infinite steps(3);
 	-moz-animation: gif 0.5s infinite steps(3);
-	/* animation: giffy 0.5s infinite linear; */
 	opacity: .8;
 }
 
@@ -271,7 +267,6 @@ nav{
 	background-position: center;
 	width: 100px;
 	height: 52px;
-	/* no fade between frames */
 	opacity: .4;
 	-webkit-transition: opacity .8s ease-in-out;
 	-moz-transition: opacity .8s ease-in-out;
@@ -284,7 +279,6 @@ nav{
 	animation: gifff 0.5s infinite steps(3);
 	-webkit-animation: gifff 0.5s infinite steps(3);
 	-moz-animation: gifff 0.5s infinite steps(3);
-	/* animation: giffy 0.5s infinite linear; */
 	opacity: .8;
 }
 
@@ -298,7 +292,6 @@ nav{
 	background-position: center;
 	width: 100px;
 	height: 52px;
-	/* no fade between frames */
 	opacity: .4;
 	-webkit-transition: opacity .8s ease-in-out;
 	-moz-transition: opacity .8s ease-in-out;
@@ -311,7 +304,6 @@ nav{
 	animation: giff 0.5s infinite steps(3);
 	-webkit-animation: giff 0.5s infinite steps(3);
 	-moz-animation: giff 0.5s infinite steps(3);
-	/* animation: giffy 0.5s infinite linear; */
 	opacity: .8;
 }
 
@@ -350,27 +342,6 @@ nav{
 }
 
 /* -------- ANIMATION KEY FRAMES -------- */
-
-@-webkit-keyframes menuGradient {
-	0%{background-position:50% 0%}
-	50%{background-position:51% 100%}
-	100%{background-position:50% 0%}
-}
-@-moz-keyframes menuGradient {
-	0%{background-position:50% 0%}
-	50%{background-position:51% 100%}
-	100%{background-position:50% 0%}
-}
-@-o-keyframes menuGradient {
-	0%{background-position:50% 0%}
-	50%{background-position:51% 100%}
-	100%{background-position:50% 0%}
-}
-@keyframes menuGradient { 
-	0%{background-position:50% 0%}
-	50%{background-position:51% 100%}
-	100%{background-position:50% 0%}
-}
 
 @keyframes fade {
 	from { opacity: 0; }
@@ -722,20 +693,17 @@ footer{
 	-ms-transition: opacity .8s ease-in-out;
 	transition: opacity .8s ease-in-out;
 	max-width: 100%;
-}
-
-.visitSite:hover{
-	opacity: 1;
-}
-
-.visitSite a{
 	display: inline-block;
 	font-family: 'Anton', sans-serif;
 	text-decoration: none;
 	font-size: 30px;
 	text-shadow: 9px 9px 6px rgba(150, 150, 150, 0.50);
 	color: #333;
-	padding: 10px 30px 10px 30px;
+	padding: 10px 0px 10px 0px;
+}
+
+.visitSite:hover{
+	opacity: 1;
 }
 
 .portInfo{
@@ -817,19 +785,16 @@ footer{
 	-webkit-appearance: none;
 	-webkit-border-radius: 0;
 	opacity: .4;
-
 	box-shadow: inset 14px 14px 42px -28px #ABABAB,12px 20px 46px -18px #DDDDDD;
 	-webkit-box-shadow: inset 14px 14px 42px -28px #ABABAB,12px 20px 46px -18px #DDDDDD;
 	-moz-box-shadow: inset 14px 14px 42px -28px #ABABAB,12px 20px 46px -18px #DDDDDD;
 	-o-box-shadow: inset 14px 14px 42px -28px #ABABAB,12px 20px 46px -18px #DDDDDD;
-
 	-webkit-transition: opacity .8s ease-in-out;
 	-moz-transition: opacity .8s ease-in-out;
 	-o-transition: opacity .8s ease-in-out;
 	-ms-transition: opacity .8s ease-in-out;
 	transition: opacity .8s ease-in-out;
 	max-width: 100%;
-
 	font-family: 'Anton', sans-serif;
 	text-decoration: none;
 	font-size: 20px;
@@ -935,7 +900,6 @@ footer{
 		cursor: pointer;
 		width: 100px;
 		margin: 10px auto;
-
 		box-shadow: inset 14px 14px 42px -28px #ABABAB,12px 20px 46px -18px #DDDDDD;
 		-webkit-box-shadow: inset 14px 14px 42px -28px #ABABAB,12px 20px 46px -18px #DDDDDD;
 		-moz-box-shadow: inset 14px 14px 42px -28px #ABABAB,12px 20px 46px -18px #DDDDDD;
@@ -1052,7 +1016,7 @@ footer{
 	}
 
 	.aboutmeContent{
-		width: 90%;
+		width: 95%;
 	}
 
 	.portInfo{

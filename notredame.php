@@ -39,6 +39,7 @@
 						<li>JQuery</li>
 						<li>ASP.NET MVC</li>
 						<li>RAZOR</li>
+						<li>LINQ</li>
 						<li>C#</li>
 						<li>HTML</li>
 						<li>CSS</li>
@@ -48,9 +49,9 @@
 
 			</div>
 
-			<div class="visitSite">
-				<a href="http://www.egrabishtest.com" target="_blank">VISIT SITE</a>
-			</div>
+			<a href="http://www.egrabishtest.com" target="_blank"><div class="visitSite">
+				VISIT SITE
+			</div></a>
 
 			<h2 class="titlePadding">Desktop Design</h2>
 
