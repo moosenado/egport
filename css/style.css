@@ -155,7 +155,7 @@ nav{
 
 .ulLeft li{
 	display: inline;
-	padding: 14px 30px 10px 30px;
+	padding: 14px 50px 10px 10px;
 	border: 1px solid #828282;
 	cursor: pointer;
 
@@ -176,7 +176,7 @@ nav{
 
 .ulLeft li:first-child{
 	background-image: url(../images/hover.gif);
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	background-position: center;
 	width: 100px;
 	height: 52px;
@@ -201,7 +201,7 @@ nav{
 
 .ulLeft li:nth-child(2){
 	background-image: url(../images/hover.gif);
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	background-position: center;
 	width: 100px;
 	height: 52px;
@@ -243,7 +243,7 @@ nav{
 
 .ulRight li{
 	display: inline;
-	padding: 14px 30px 10px 30px;
+	padding: 14px 50px 10px 10px;
 	border: 1px solid #828282;
 	cursor: pointer;
 
@@ -263,7 +263,7 @@ nav{
 
 .ulRight li:first-child{
 	background-image: url(../images/hover.gif);
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	background-position: center;
 	width: 100px;
 	height: 52px;
@@ -288,7 +288,7 @@ nav{
 
 .ulRight li:nth-child(2){
 	background-image: url(../images/hover.gif);
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	background-position: center;
 	width: 100px;
 	height: 52px;

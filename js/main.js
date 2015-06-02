@@ -131,6 +131,8 @@ $(document).ready(function () {
 			className[i].style.webkitAnimationIterationCount = 'infinite';
 
 			className[i].style.border = '3px solid #39ffec';
+
+			className[i].style.opacity = '.6';
 		}
 
 	//MOBILE MENU DISPLAY
