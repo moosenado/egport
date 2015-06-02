@@ -183,6 +183,22 @@ $(document).ready(function () {
 			});
 		});
 
+		//outside area is clicked
+
+		$('.mobileNav').click(function(e){
+
+			e.preventDefault();
+
+			$('#menuOverlay').velocity("fadeOut", { duration: 1000 });
+			
+			$('.burger').velocity("fadeIn", { duration: 1000 });
+			$('html, body').css({
+				'overflow-y': 'auto',
+				'height': 'auto'
+			});
+
+		});
+
 	//PAGE EXIT ANIMATION
 
 	function changePage(goToPage){
