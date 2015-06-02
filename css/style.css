@@ -122,18 +122,9 @@ nav{
 
 #logo img.bottom_image{
 	opacity:0;
-
-	-webkit-animation:fade ease-in 1;  
-	-moz-animation:fade ease-in 1;
-	animation:fade ease-in 1;
-
-	-webkit-animation-duration: 2.2s;
-	-moz-animation-duration: 2.2s;
-	animation-duration: 2.2s;
-
-	-webkit-animation-fill-mode:forwards;
-	-moz-animation-fill-mode:forwards;
-	animation-fill-mode:forwards;
+	-webkit-animation: fadein 6s ease-in-out 0s 50;
+	-moz-animation: fadein 6s ease-in-out 0s 50;
+	animation: fadein 6s ease-in-out 0s 50;
 }
 
 .ulLeft{
@@ -342,6 +333,56 @@ nav{
 }
 
 /* -------- ANIMATION KEY FRAMES -------- */
+
+@keyframes fadein {
+  0%, 100% {
+    opacity: .3;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  0%, 100% {
+    opacity: .3;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  0%, 100% {
+    opacity: .3;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadein {
+  0%, 100% {
+    opacity: .3;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+  0%, 100% {
+    opacity: .3;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
 
 @keyframes fade {
 	from { opacity: 0; }
