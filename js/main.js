@@ -10,7 +10,7 @@ $(document).ready(function () {
 
 	//FADE IN BODY ON LOAD
 
-	$('body').velocity("fadeIn", { duration: 1000 });
+	$('html').velocity("fadeIn", { duration: 1000 });
 
 	//SET PAGE TITLE
 
@@ -130,7 +130,7 @@ $(document).ready(function () {
 			className[i].style.animationIterationCount = 'infinite';
 			className[i].style.webkitAnimationIterationCount = 'infinite';
 
-			className[i].style.border = '3px solid #39ffec';
+			className[i].style.borderBottom = '4px solid #333';
 		}
 
 	//MOBILE MENU DISPLAY
