@@ -122,9 +122,17 @@ nav{
 
 #logo img.bottom_image{
 	opacity:0;
-	-webkit-animation: fadein 6.5s ease-in-out 0s 50;
-	-moz-animation: fadein 6.5s ease-in-out 0s 50;
-	animation: fadein 6.5s ease-in-out 0s 50;
+	-webkit-animation:fade ease-in 1;  
+	-moz-animation:fade ease-in 1;
+	animation:fade ease-in 1;
+
+	-webkit-animation-duration: 1.4s;
+	-moz-animation-duration: 1.4s;
+	animation-duration: 1.4s;
+
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
 }
 
 .ulLeft{
@@ -309,7 +317,7 @@ nav{
 	margin-right: auto;
 	left: 0;
 	right: 0;
-	font-family: 'Lobster', cursive;
+	font-family: 'Anton', sans-serif;
 	font-size: 120px;
 	color: rgb(107, 107, 107);
 	text-align: center;
@@ -320,6 +328,17 @@ nav{
 	-webkit-transform: rotate(-5deg); 
 	-moz-transform: rotate(-5deg);
 	z-index: -1;
+	-webkit-animation:fadetitle ease-in 1;  
+	-moz-animation:fadetitle ease-in 1;
+	animation:fadetitle ease-in 1;
+
+	-webkit-animation-duration: 2s;
+	-moz-animation-duration: 2s;
+	animation-duration: 2s;
+
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
 }
 
 .innerTitle{
@@ -407,6 +426,31 @@ nav{
 @-o-keyframes fade {
 	from { opacity: 0; }
 	to   { opacity: 1; }
+}
+
+@keyframes fadetitle {
+	from { opacity: 0; }
+	to   { opacity: .1; }
+}
+
+@-moz-keyframes fadetitle {
+	from { opacity: 0; }
+	to   { opacity: .1; }
+}
+
+@-webkit-keyframes fadetitle {
+	from { opacity: 0; }
+	to   { opacity: .1; }
+}
+
+@-ms-keyframes fadetitle {
+	from { opacity: 0; }
+	to   { opacity: .1; }
+}
+
+@-o-keyframes fadetitle {
+	from { opacity: 0; }
+	to   { opacity: .1; }
 }
 
 @keyframes gif {
@@ -881,6 +925,7 @@ footer{
 
 	#backTitle{
 		font-size: 100px;
+		top: -10%;
 	}
 
 	.aboutmeContent{
@@ -890,6 +935,10 @@ footer{
 
 	#mePic{
 		float: none;
+	}
+
+	.aboutmeContent{
+		width: 95%;
 	}
 
 }
@@ -946,7 +995,7 @@ footer{
 		padding: 30px 30px 30px 30px;
 		border: 1px solid #828282;
 		cursor: pointer;
-		width: 100px;
+		width: 30%;
 		margin: 10px auto;
 		box-shadow: inset 14px 14px 42px -28px #ABABAB,12px 20px 46px -18px #DDDDDD;
 		-webkit-box-shadow: inset 14px 14px 42px -28px #ABABAB,12px 20px 46px -18px #DDDDDD;
@@ -1026,8 +1075,10 @@ footer{
 
 @media only screen and (max-width: 790px){
 	#backTitle{
-		font-size: 80px;
-		top: -30%;
+		font-size: 100px;
+		overflow-x: hidden;
+		overflow-y: hidden;
+		white-space: nowrap
 	}
 }
 
@@ -1049,7 +1100,7 @@ footer{
 	}
 
 	#backTitle{
-		top: -10%;
+		top: -7%;
 		overflow-x: hidden;
 		overflow-y: hidden;
 		white-space: nowrap
