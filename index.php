@@ -120,21 +120,7 @@
 
 <script>
 
-//SLIDE IN WEBSITE SCREENS (UI)
-
 $(document).ready(function () {
-
-	var i = 1;
-
-	var go = setInterval(function(){
-    
-		$('#rightcol_'+i).show('slide', { direction: 'left' }, 1000);
-    
-		$('#leftcol_'+i).show('slide', { direction: 'right' }, 1000);
-    
-            i++;
-
-    	}, 400)
 
 	//RAISE OPACITY WHEN SCOLLING DOWN ON MOBILE
 

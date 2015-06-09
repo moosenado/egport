@@ -5,19 +5,19 @@ html, body, ul, li, div, h1, h2{
 	padding: 0;
 }
 
-body{
-	line-height: 1;
-	margin: 0 0 80px;
-	background: linear-gradient(182deg, #ffffff, #cecece);
-	background-size: 100% 100%;
-	display: none;
-}
-
 html{
 	position: relative; /* for sticky footer */
 	min-height: 100%;
 	overflow-x: hidden;
 	overflow-y: scroll;
+	display: none;
+}
+
+body{
+	line-height: 1;
+	margin: 0 0 80px;
+	background: linear-gradient(182deg, #ffffff, #cecece);
+	background-size: 100% 100%;
 }
 
 /* -------- COMMON STYLING -------- */
@@ -188,9 +188,9 @@ nav{
 }
 
 .ulLeft li:first-child:hover{
-	animation: giffff 0.5s infinite steps(3);
-	-webkit-animation: giffff 0.5s infinite steps(3);
-	-moz-animation: giffff 0.5s infinite steps(3);
+	animation: giffff 0.5s infinite;
+	-webkit-animation: giffff 0.5s infinite;
+	-moz-animation: giffff 0.5s infinite;
 	opacity: .8;
 }
 
@@ -213,9 +213,9 @@ nav{
 }
 
 .ulLeft li:nth-child(2):hover{
-	animation: gif 0.5s infinite steps(3);
-	-webkit-animation: gif 0.5s infinite steps(3);
-	-moz-animation: gif 0.5s infinite steps(3);
+	animation: gif 0.5s infinite;
+	-webkit-animation: gif 0.5s infinite;
+	-moz-animation: gif 0.5s infinite;
 	opacity: .8;
 }
 
@@ -275,9 +275,9 @@ nav{
 }
 
 .ulRight li:first-child:hover{
-	animation: gifff 0.5s infinite steps(3);
-	-webkit-animation: gifff 0.5s infinite steps(3);
-	-moz-animation: gifff 0.5s infinite steps(3);
+	animation: gifff 0.5s infinite;
+	-webkit-animation: gifff 0.5s infinite;
+	-moz-animation: gifff 0.5s infinite;
 	opacity: .8;
 }
 
@@ -300,9 +300,9 @@ nav{
 }
 
 .ulRight li:nth-child(2):hover{
-	animation: giff 0.5s infinite steps(3);
-	-webkit-animation: giff 0.5s infinite steps(3);
-	-moz-animation: giff 0.5s infinite steps(3);
+	animation: giff 0.5s infinite;
+	-webkit-animation: giff 0.5s infinite;
+	-moz-animation: giff 0.5s infinite;
 	opacity: .8;
 }
 
@@ -349,6 +349,17 @@ nav{
 	text-align: justify;
 	margin: 0 auto;
 	max-width: 100%;
+	-webkit-animation:fadeindex ease-in 1;  
+	-moz-animation:fadeindex ease-in 1;
+	animation:fadeindex ease-in 1;
+
+	-webkit-animation-duration: 2.5s;
+	-moz-animation-duration: 2.5s;
+	animation-duration: 2.5s;
+
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
 }
 
 /* -------- ANIMATION KEY FRAMES -------- */
@@ -593,6 +604,36 @@ nav{
 	100%  { background-image: url('../images/hover4-4.gif'); }
 }
 
+@keyframes fadeindex {
+	from { opacity: 0; }
+	to   { opacity: .5; }
+}
+
+@-moz-keyframes fadeindex {
+	from { opacity: 0; }
+	to   { opacity: .5; }
+}
+
+@-webkit-keyframes fadeindex {
+	from { opacity: 0; }
+	to   { opacity: .5; }
+}
+
+@-ms-keyframes fadeindex {
+	from { opacity: 0; }
+	to   { opacity: .5; }
+}
+
+@-o-keyframes fadeindex {
+	from { opacity: 0; }
+	to   { opacity: .5; }
+}
+
+@keyframes fadetitle {
+	from { opacity: 0; }
+	to   { opacity: .1; }
+}
+
 /* -------- MAIN CONTENT -------- */
 
 main{
@@ -602,7 +643,6 @@ main{
 }
 
 .wholeProject{
-	opacity: .5;
 	-webkit-transition: opacity 1s ease-in-out;
 	-moz-transition: opacity 1s ease-in-out;
 	-o-transition: opacity 1s ease-in-out;
@@ -610,6 +650,16 @@ main{
 	transition: opacity 1s ease-in-out;
 	height: 250px;
 	cursor: pointer;
+	-webkit-animation:fadeindex ease-in 1;  
+	-moz-animation:fadeindex ease-in 1;
+	animation:fadeindex ease-in 1;
+
+	-webkit-animation-duration: 2s;
+	-moz-animation-duration: 2s;
+	animation-duration: 2s;
+
+	opacity: .5;
+
 }
 
 .wholeProject:hover{
@@ -621,7 +671,6 @@ main{
 	float:left;
 	width: 50%;
 	max-width: 100%;
-	display: none;
 }
 
 .rightCol{
@@ -629,7 +678,6 @@ main{
 	float:right;
 	width: 50%;
 	max-width: 100%;
-	display: none;
 }
 
 .proj{
@@ -710,8 +758,19 @@ footer{
 	width: 200px;
 	height: 200px;
 	margin: 0 auto;
-	display: none;
 	float: left;
+
+	-webkit-animation:fadeindex ease-in 1;  
+	-moz-animation:fadeindex ease-in 1;
+	animation:fadeindex ease-in 1;
+
+	-webkit-animation-duration: 2.5s;
+	-moz-animation-duration: 2.5s;
+	animation-duration: 2.5s;
+
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
 }
 
 #mePic img{
@@ -896,7 +955,7 @@ footer{
 .lbl{
 	display: inline-block;
 	font-family: 'Droid Sans', sans-serif;
-	color: #4d4d4d;
+	color: #999;
 	font-size: 16px;
 	padding: 10px;
 }
@@ -906,7 +965,7 @@ footer{
 }
 
 #fapadding{
-	font-size: 25px;
+	font-size: 30px;
 	display: block;
 	margin-bottom: 30px;
 }
@@ -939,6 +998,10 @@ footer{
 
 	.aboutmeContent{
 		width: 95%;
+	}
+
+	.innerTitle{
+		text-align: center;
 	}
 
 }

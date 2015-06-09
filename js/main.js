@@ -4,10 +4,6 @@ $(document).ready(function () {
 
 	var onPage;
 
-	//SHOW BODY
-
-	$('body').show(); //for smooth transition on page load
-
 	//FADE IN BODY ON LOAD
 
 	$('html').velocity("fadeIn", { duration: 1000 });
@@ -158,9 +154,9 @@ $(document).ready(function () {
 		$('.mobileNav').velocity("fadeIn", { duration: 1000 });
 		
 		//hide ability to scroll
-		$('html, body').css({
-			'overflow': 'hidden',
-			'height': '100%'
+		$('html').css({
+			'position': 'fixed',
+   			'width': '100%'
 		});
 
 		//fade in cross
@@ -177,9 +173,9 @@ $(document).ready(function () {
 			$('#menuOverlay').velocity("fadeOut", { duration: 1000 });
 			
 			$('.burger').velocity("fadeIn", { duration: 1000 });
-			$('html, body').css({
-				'overflow-y': 'auto',
-				'height': 'auto'
+
+			$('html').css({
+				'position': 'relative',
 			});
 		});
 
@@ -192,9 +188,9 @@ $(document).ready(function () {
 			$('#menuOverlay').velocity("fadeOut", { duration: 1000 });
 			
 			$('.burger').velocity("fadeIn", { duration: 1000 });
-			$('html, body').css({
-				'overflow-y': 'auto',
-				'height': 'auto'
+			
+			$('html').css({
+				'position': 'relative',
 			});
 
 		});

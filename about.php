@@ -29,16 +29,4 @@
 
 </body>
 
-<script>
-
-$(document).ready(function () {
-
-	//SLIDE IN PROFILE PIC
-
-	$('#mePic').show('slide', { direction: 'left' }, 1000);
-
-});
-
-</script>
-
 </html>
