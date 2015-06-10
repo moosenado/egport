@@ -20,6 +20,11 @@ body{
 	background-size: 100% 100%;
 }
 
+body:after{
+    display:none;
+    content: url('../images/hover1.gif') url('../images/hover2.gif') url('../images/hover3.gif') url('../images/hover4.gif') url('../images/hover2-1.gif') url('../images/hover2-2.gif') url('../images/hover2-3.gif') url('../images/hover2-4.gif') url('../images/hover3-1.gif') url('../images/hover3-2.gif') url('../images/hover3-3.gif') url('../images/hover3-4.gif') url('../images/hover4-1.gif') url('../images/hover4-2.gif') url('../images/hover4-3.gif') url('../images/hover4-4.gif');
+}
+
 /* -------- COMMON STYLING -------- */
 
 a, p{
@@ -188,9 +193,9 @@ nav{
 }
 
 .ulLeft li:first-child:hover{
-	animation: giffff 0.5s infinite;
-	-webkit-animation: giffff 0.5s infinite;
-	-moz-animation: giffff 0.5s infinite;
+	animation: giffff 0.5s infinite steps(3);
+	-webkit-animation: giffff 0.5s infinite steps(3);
+	-moz-animation: giffff 0.5s infinite steps(3);
 	opacity: .8;
 }
 
@@ -213,9 +218,9 @@ nav{
 }
 
 .ulLeft li:nth-child(2):hover{
-	animation: gif 0.5s infinite;
-	-webkit-animation: gif 0.5s infinite;
-	-moz-animation: gif 0.5s infinite;
+	animation: gif 0.5s infinite steps(3);
+	-webkit-animation: gif 0.5s infinite steps(3);
+	-moz-animation: gif 0.5s infinite steps(3);
 	opacity: .8;
 }
 
@@ -275,9 +280,9 @@ nav{
 }
 
 .ulRight li:first-child:hover{
-	animation: gifff 0.5s infinite;
-	-webkit-animation: gifff 0.5s infinite;
-	-moz-animation: gifff 0.5s infinite;
+	animation: gifff 0.5s infinite steps(3);
+	-webkit-animation: gifff 0.5s infinite steps(3);
+	-moz-animation: gifff 0.5s infinite steps(3);
 	opacity: .8;
 }
 
@@ -300,9 +305,9 @@ nav{
 }
 
 .ulRight li:nth-child(2):hover{
-	animation: giff 0.5s infinite;
-	-webkit-animation: giff 0.5s infinite;
-	-moz-animation: giff 0.5s infinite;
+	animation: giff 0.5s infinite steps(3);
+	-webkit-animation: giff 0.5s infinite steps(3);
+	-moz-animation: giff 0.5s infinite steps(3);
 	opacity: .8;
 }
 
