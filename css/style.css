@@ -22,7 +22,7 @@ body{
 
 body:after{
     display:none;
-    content: url('../images/hover1.gif') url('../images/hover2.gif') url('../images/hover3.gif') url('../images/hover4.gif') url('../images/hover2-1.gif') url('../images/hover2-2.gif') url('../images/hover2-3.gif') url('../images/hover2-4.gif') url('../images/hover3-1.gif') url('../images/hover3-2.gif') url('../images/hover3-3.gif') url('../images/hover3-4.gif') url('../images/hover4-1.gif') url('../images/hover4-2.gif') url('../images/hover4-3.gif') url('../images/hover4-4.gif');
+    content: url('../images/hover1.gif') url('../images/hover2.gif') url('../images/hover3.gif') url('../images/hover4.gif') url('../images/hover2-1.gif') url('../images/hover2-2.gif') url('../images/hover2-3.gif') url('../images/hover2-4.gif') url('../images/hover3-1.gif') url('../images/hover3-2.gif') url('../images/hover3-3.gif') url('../images/hover3-4.gif') url('../images/hover4-1.gif') url('../images/hover4-2.gif') url('../images/hover4-3.gif') url('../images/hover4-4.gif') url('../images/burger1.gif') url('../images/burger2.gif') url('../images/burger3.gif') url('../images/cross1.gif') url('../images/cross2.gif') url('../images/cross3.gif');
 }
 
 /* -------- COMMON STYLING -------- */
