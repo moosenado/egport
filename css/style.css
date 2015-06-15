@@ -197,6 +197,7 @@ nav{
 	-webkit-animation: giffff 0.5s infinite steps(3);
 	-moz-animation: giffff 0.5s infinite steps(3);
 	opacity: .8;
+	background-image: url('../images/hover4-1.gif');
 }
 
 .ulLeft li:first-child:active{
@@ -222,6 +223,7 @@ nav{
 	-webkit-animation: gif 0.5s infinite steps(3);
 	-moz-animation: gif 0.5s infinite steps(3);
 	opacity: .8;
+	background-image: url('../images/hover1.gif');
 }
 
 .ulLeft li:nth-child(2):active{
@@ -284,6 +286,7 @@ nav{
 	-webkit-animation: gifff 0.5s infinite steps(3);
 	-moz-animation: gifff 0.5s infinite steps(3);
 	opacity: .8;
+	background-image: url('../images/hover3-1.gif');
 }
 
 .ulRight li:first-child:active{
@@ -309,6 +312,7 @@ nav{
 	-webkit-animation: giff 0.5s infinite steps(3);
 	-moz-animation: giff 0.5s infinite steps(3);
 	opacity: .8;
+	background-image: url('../images/hover2-1.gif');
 }
 
 .ulRight li:nth-child(2):active{
