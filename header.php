@@ -8,9 +8,6 @@
 	<link rel="icon" type="image/png" href="images/eg.png">
 	<link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src="js/velocity.min.js"></script>
-	<script src="js/main.js"></script>
 	<title>Elliot Grabish Online</title>
 </head>
 

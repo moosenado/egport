@@ -104,19 +104,7 @@
 
 	</main>
 
-	<!-- FOOTER -->
-
-	<!-- <footer>
-
-		<div id="page_info">
-
-			<p>&copy; Elliot Grabish 2015</p>
-
-		</div>
-
-	</footer> -->
-
-</body>
+<?php include('scripts.php'); ?>
 
 <script>
 
@@ -176,5 +164,7 @@ $(document).ready(function () {
 	});
 
 </script>
+
+</body>
 
 </html>

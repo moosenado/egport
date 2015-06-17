@@ -102,6 +102,8 @@ if(isset($_POST['submit'])){
 		
 	</main>
 
+<?php include('scripts.php'); ?>
+
 </body>
 
 </html>
