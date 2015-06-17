@@ -23,11 +23,11 @@
 				</p>
 
 				<p class="justify">
-					Completely redesign and develop the website for Notre Dame Hospial in Hearst, Ontario. I took on the role of team leader and worked with four talented classmates. The site is cross device compatible and also features an indepth content management system (CMS). All website content including the main navigation can be edited from the CMS. 
+					Completely redesign and develop the website for Notre Dame Hospial in Hearst, Ontario. I took on the role of team leader and worked with four talented classmates. The site is cross device compatible and also features an indepth content management system (CMS). All website content including the main navigation can be edited by hospital staff from the CMS. 
 				</p>
 
 				<p class="justify">
-					I was individually responsible from developing three applications which included an ER wait time algorithm, an online gift shop, and a dynamic news feed.
+					I was individually responsible for developing three applications which included an ER wait time algorithm, an online gift shop, and a dynamic news feed.
 				</p>
 
 				<h2 class="titlePadding">Technologies</h2>

@@ -6,7 +6,6 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="icon" type="image/png" href="images/eg.png">
-	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -63,7 +62,7 @@
 				<img src="images/newlogo2nonesmall.png" title="EG Logo" alt="EG Logo" class="top_image"/>
 				
 				<!-- Fade below image in on load -->
-				<a href="http://www.elliotgrabish.com"><img src="images/newlogo2.png" title="EG Logo" alt="EG Logo" class="bottom_image" /></a>
+				<a href="http://www.elliotgrabish.com"><img src="images/newlogo2new.png" title="EG Logo" alt="EG Logo" class="bottom_image" /></a>
 
 			</div>
 		</nav>

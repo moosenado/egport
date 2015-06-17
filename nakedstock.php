@@ -23,7 +23,7 @@
 				</p>
 
 				<p class="justify">
-					In a team of 7 people, we developed and designed a javascript heavy website for an imaginary restaurant. We each developed two features that revolved around the use of JavaScript and Jquery.  
+					In a team of seven, we developed and designed a javascript heavy website for an imaginary restaurant. We each developed two features that revolved around the use of JavaScript and jQuery.  
 				</p>
 
 				<p class="justify">

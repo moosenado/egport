@@ -19,7 +19,7 @@
 				<h2 class="titlePadding">Goal</h2>
 
 				<p class="justify">
-					Develop and design an application that tourists or any Toronto resident can use to locate the nearest park facilities to them using their GPS location. Users can also attain information about other facilities available at a park, view pictures of the park, and view the park location on a map. The application makes use of Google Maps API, Flikr API, as well as open data from the City of Toronto.  
+					Develop and design an application that tourists or any Toronto resident can use to locate the nearest park facilities to them using their GPS location. Users can attain information about other facilities available at a park, view pictures of the park, and view the park location on a map. The application makes use of Google Maps API, Flickr API, as well as open data from the City of Toronto.  
 				</p>
 
 				<p class="justify">

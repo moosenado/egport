@@ -199,14 +199,6 @@ $(document).ready(function () {
 
 	function changePage(goToPage){
 
-        //EXPAND MENU
-
-        $(".mobileNav li").velocity({
-            "width": 200,
-            "left": 50,
-            "top":  50
-        }, 1300 );
-
         //FADE PAGE
 
 		$('html').velocity('fadeOut', 1000, function() {
