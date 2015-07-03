@@ -14,7 +14,7 @@ $validateArray = array();
 
 if(isset($_POST['submit'])){
 
-	require_once "Mail.php";
+	//require_once "Mail.php";
 
 	$name = $_POST['name'];
 	$email = $_POST['email'];
@@ -32,28 +32,32 @@ if(isset($_POST['submit'])){
 		
 	}else{
 
-	$to = "egrabish@gmail.com";
-	$subject = "EG Form Submission";
+	// $to = "egrabish@gmail.com";
+	// $subject = "EG Form Submission";
 
-	$host = "ssl://mail.stem.arvixe.com";
-	$port = "465";
-	$username = "test@egrabishtest.com";
-	$password = "egrabishtest";
+	// $host = "ssl://mail.stem.arvixe.com";
+	// $port = "465";
+	// $username = "test@egrabishtest.com";
+	// $password = "egrabishtest";
 
-	$headers = array ('From' => $from,
-		'To' => $to,
-		'Subject' => $subject);
+	// $headers = array ('From' => $from,
+	// 	'To' => $to,
+	// 	'Subject' => $subject);
 
-	$smtp = Mail::factory('smtp',
-		array ('host' => $host,
-			'port' => $port,
-			'auth' => true,
-			'username' => $username,
-			'password' => $password));
+	// $smtp = Mail::factory('smtp',
+	// 	array ('host' => $host,
+	// 		'port' => $port,
+	// 		'auth' => true,
+	// 		'username' => $username,
+	// 		'password' => $password));
 
-	$body = $message;
+	// $body = $message;
 
-	$mail = $smtp->send($to, $headers, $body);
+	// $mail = $smtp->send($to, $headers, $body);
+		
+	$final_headers = $from;
+	
+	mail('egrabish@gmail.com', 'EG Form Submission', $message, $final_headers);
 
 	$formOutput = "Thanks! I will be in touch soon.";
 
@@ -65,7 +69,10 @@ if(isset($_POST['submit'])){
 	<main role="main">
 
 		<div class="innerTitle">
-			<h1 class="center titlePadding"><i class="fa fa-envelope" id="fapadding"></i> Contact Me</h1>
+			<div id="mail">
+				<img src="images/mail.gif" alt="picture of mail icon" title="mail icon" class="mailicon"/>
+			</div>
+			<h1 class="center titlePadding">Contact Me</h1>
 		</div>
 
 		<div id="formStyle">

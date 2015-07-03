@@ -17,7 +17,7 @@
 				<h2 class="titlePadding">Goal</h2>
 
 				<p class="justify">
-					Rebrand and develop hunting manufacturing company, ALTAN Safe Outdoors', online presence through a completely redesigned website with an online order quote application. The website is cross device and browser compatible (IE6+).
+					Rebrand and develop hunting manufacturing company, ALTAN Safe Outdoors', online presence through a completely redesigned website with an online order quote application. The website is cross device and browser compatible (IE8+).
 				</p>
 
 				<p class="justify">
