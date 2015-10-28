@@ -53,11 +53,11 @@
 			</div>
 
 			<div class="portImage" style="margin-top: 20px">
-				<img src="images/sportsnetpage3.jpg" title="Sportsnet Page 2" alt="Sportsnet Page 2" />
+				<img src="images/sportsnetpage3.jpg" title="Sportsnet Page 3" alt="Sportsnet Page 3" />
 			</div>
 
 			<div class="portImage" style="margin-top: 20px">
-				<img src="images/sportsnetpage4.jpg" title="Sportsnet Page 2" alt="Sportsnet Page 2" />
+				<img src="images/sportsnetpage4.jpg" title="Sportsnet Page 4" alt="Sportsnet Page 4" />
 			</div>
 
 			<h2 class="titlePadding">Mobile Design</h2>
@@ -67,11 +67,11 @@
 			</div>
 
 			<div class="portImageMobile" style="margin-top: 20px">
-				<img src="images/sportsnetpagemobile.jpg" title="Sportsnet Mobile" alt="Sportsnet Mobile" />
+				<img src="images/sportsnetpagemobile.jpg" title="Sportsnet Mobile 2" alt="Sportsnet Mobile 2" />
 			</div>
 
 			<div class="portImageMobile" style="margin-top: 20px">
-				<img src="images/sportsnetpagemobile2.jpg" title="Sportsnet Mobile" alt="Sportsnet Mobile" />
+				<img src="images/sportsnetpagemobile2.jpg" title="Sportsnet Mobile 3" alt="Sportsnet Mobile 3" />
 			</div>
 
 			<div id="pageNav">
