@@ -36,6 +36,8 @@
 						<li>JSON</li>
 						<li>XML</li>
 						<li>XPATH</li>
+						<li>Google Maps API</li>
+						<li>Flickr API</li>
 					</ul>
 
 				</div>
