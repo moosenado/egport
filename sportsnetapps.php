@@ -19,11 +19,7 @@
 				<h2 class="titlePadding">Goal</h2>
 
 				<p class="justify">
-					Initial one page design was provided by graphic designer, Rob Wootten. We worked closely together to bring a unique feel and rhythm to the page highlighting the Sportsnet apps that are available. It was important to include big animations/video as well as subtle detailing to bring the page to life - From the HTML 5 video running responsively inside the devices to the subtle shadow zooms and icon hightlights.
-				</p>
-
-				<p class="justify">
-					This was an exciting project to work on and I am happy with the results Rob and I were able to achieve.
+					Initial one page design was provided by graphic designer, Rob Wootten. We worked closely together to bring a unique feel and rhythm to the page highlighting the Sportsnet apps that are available. It was important to include animations/video as well as subtle detailing to bring the page to life - From the HTML 5 video running responsively inside the devices to the subtle shadow zooms and icon hightlights.
 				</p>
 
 				<h2 class="titlePadding">Technologies</h2>
