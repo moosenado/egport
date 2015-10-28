@@ -31,14 +31,11 @@
 				<div id="techList">
 
 					<ul>
-						<li>JavaScript</li>
 						<li>JQuery</li>
 						<li>PHP</li>
 						<li>JSON</li>
 						<li>XML</li>
 						<li>XPATH</li>
-						<li>HTML</li>
-						<li>CSS</li>
 					</ul>
 
 				</div>

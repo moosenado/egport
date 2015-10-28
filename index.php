@@ -8,7 +8,31 @@
 
 		<a id="opacTrig1"></a>
 
-		<div class="wholeProject" id="proj1" onclick="portPage">
+		<div class="wholeProject" id="proj4">
+
+			<div class="leftCol" id="leftcol_4">
+				<div class="proj">
+					<div class="projLogo">
+						<img src="images/sportsnetlogo.png" title="Sportsnet Logo" alt="Sportsnet Logo" />
+					</div>
+				</div>
+			</div>
+
+			<div class="rightCol" id="rightcol_4">
+				<div class="projRight">
+					<div class="projScreen">
+						<img src="images/sportsnetpage.jpg" title="Sportsnet Page" alt="Sportsnet Page" />
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="clear"></div>
+
+		<!-- PROJECT 2 -->
+
+		<div class="wholeProject" id="proj1">
 
 			<div class="leftCol" id="leftcol_1">
 				<div class="proj">
@@ -30,7 +54,7 @@
 
 		<div class="clear"></div>
 
-		<!-- PROJECT 2 -->
+		<!-- PROJECT 3 -->
 
 		<div class="wholeProject" id="proj2">
 
@@ -54,7 +78,7 @@
 
 		<div class="clear"></div>
 
-		<!-- PROJECT 3 -->
+		<!-- PROJECT 4 -->
 
 		<div class="wholeProject" id="proj3">
 
@@ -70,30 +94,6 @@
 				<div class="projRight">
 					<div class="projScreen">
 						<img src="images/notredamepage.jpg" title="Notre Dame Page" alt="Notre Dame Page" />
-					</div>
-				</div>
-			</div>
-
-		</div>
-
-		<div class="clear"></div>
-
-		<!-- PROJECT 4 -->
-
-		<div class="wholeProject" id="proj4">
-
-			<div class="leftCol" id="leftcol_4">
-				<div class="proj">
-					<div class="projLogo">
-						<img src="images/nakedstocklogo.png" title="Naked Stock Logo" alt="Naked Stock Logo" />
-					</div>
-				</div>
-			</div>
-
-			<div class="rightCol" id="rightcol_4">
-				<div class="projRight">
-					<div class="projScreen">
-						<img src="images/nakedstockpage.jpg" title="Naked Stock Page" alt="Naked Stock Page" />
 					</div>
 				</div>
 			</div>
@@ -146,7 +146,7 @@ $(document).ready(function () {
 	}, false);
 
 	document.getElementById("proj4").addEventListener("click", function() {
-		portPage('nakedstock');
+		portPage('sportsnetapps');
 	}, false);
 
 	//CHANGE PAGE

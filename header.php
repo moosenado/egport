@@ -3,6 +3,9 @@
 
 <head>
 	<meta name="viewport" content="width=device-width" />
+	<meta name="description" content="Elliot Grabish - Web Developer Portfolio">
+	<meta name="keywords" content="Elliot Grabish, Web Developer, Graphic Designer, Toronto, Sportsnet">
+	<meta name="author" content="Elliot Grabish">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="icon" type="image/png" href="images/eg.png">

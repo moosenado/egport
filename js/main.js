@@ -45,7 +45,7 @@ $(document).ready(function () {
 		case "altan.php":
 		case "notredame.php":
 		case "torontofacilities.php":
-		case "nakedstock.php":
+		case "sportsnetapps.php":
 			onPage = new Page('My Work', 'mywork', 'giffff');
 			break;
 		case "about.php":
@@ -80,7 +80,7 @@ $(document).ready(function () {
 						changePage('about');
 					}
 					if(_nextPage.className == 'blog'){
-						changePage('blog');
+						// changePage('blog');
 					}
 					if(_nextPage.className == 'contact'){
 						changePage('contact');
@@ -102,7 +102,7 @@ $(document).ready(function () {
 						changePage('about');
 					}
 					if(_nextPageM.className == 'blog'){
-						changePage('blog');
+						// changePage('blog');
 					}
 					if(_nextPageM.className == 'contact'){
 						changePage('contact');

@@ -35,14 +35,11 @@
 				<div id="techList">
 
 					<ul>
-						<li>JavaScript</li>
 						<li>JQuery</li>
 						<li>ASP.NET MVC</li>
 						<li>RAZOR</li>
 						<li>LINQ</li>
 						<li>C#</li>
-						<li>HTML</li>
-						<li>CSS</li>
 					</ul>
 
 				</div>
@@ -69,7 +66,7 @@
 				<ul>
 					<li><a href="torontofacilities.php"><img src="images/backwardarrow.png" title="Back" alt="Back Arrow" /></a></li>
 					<li>Prev | Next</li>
-					<li><a href="nakedstock.php"><img src="images/forwardarrow.png" title="Forward" alt="Forward Arrow" /></a></li>
+					<li><a href="sportsnetapps.php"><img src="images/forwardarrow.png" title="Forward" alt="Forward Arrow" /></a></li>
 				</ul>
 			</div>
 			
